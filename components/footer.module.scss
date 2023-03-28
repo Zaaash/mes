@@ -1,0 +1,206 @@
+/*********************************************************************************************************************
+  FOOTER
+*********************************************************************************************************************/
+#footer {
+  margin-top: var(--margins);
+  background-color: rgb(var(--blueDark));
+
+  @media screen and (max-width: 768px) {
+    margin-top: 170px;
+  }
+
+  @media screen and (min-width: 769px) {
+    padding-top: 3rem;
+  }
+
+  A {
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: rgb(var(--red));
+    }
+  }
+
+  // Sitemap
+  //////////////////////////////////////////////////////////////////////////
+  #links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: rgb(var(--greyLight));
+
+    @media screen and (max-width: 640px) {
+      gap: 4rem 1.5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+    }
+
+    .titleBlock {
+      font-size: 1.1rem;
+      font-weight: bold;
+
+      &::first-letter {
+        color: rgb(var(--red));
+      }
+    }
+
+    #identity {
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
+
+      @media screen and (min-width: 769px) {
+      }
+
+      .logo {
+        @media (max-width: 640px) {
+          width: 100%;
+          text-align: center;
+        }
+
+        @media (min-width: 641px) {
+          width: 500px;
+        }
+      }
+
+      P {
+        @media (max-width: 640px) {
+          font-size: 1rem;
+          letter-spacing: 0.1rem;
+        }
+
+        @media (min-width: 641px) {
+          font-size: 1.3rem;
+          letter-spacing: 0.2rem;
+        }
+      }
+
+      UL {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+
+        LI {
+          A {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid var(--greyLight);
+            border-radius: 50px;
+            width: 50px;
+            height: 50px;
+            color: var(--greenLight);
+
+            &:hover {
+              background-color: var(--greenDark);
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    .sitemap {
+      LI {
+        margin: 5px 0;
+        line-height: 2rem;
+      }
+    }
+
+    #coords {
+      @media (max-width: 640px) {
+        display: none;
+      }
+
+      .inputContainer {
+        margin-top: 1rem;
+
+        INPUT:focus + LABEL {
+          background-image: linear-gradient(#604335 0%, #604335 49%, var(--beigeLight) 50%, var(--beigeLight) 100%);
+        }
+      }
+
+      BUTTON {
+        margin-top: 15px;
+        width: 100%;
+        color: var(--brown);
+      }
+
+      P {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  #coords > DIV {
+    display: flex;
+    margin-block: 1rem;
+
+    SVG {
+      margin-right: 0.5rem;
+      width: 1rem;
+    }
+  }
+
+  // Copyright / MLs
+  //////////////////////////////////////////////////////////////////////////
+  #legals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px auto 0;
+    border-top: 1px solid rgb(var(--grey));
+    padding: 20px 0.5rem;
+    font-size: 12px;
+
+    @media (max-width: 640px) {
+      flex-direction: column;
+    }
+
+    & > DIV {
+      color: rgb(var(--grey));
+
+      @media (max-width: 640px) {
+        margin-bottom: 0.3rem;
+        text-align: center;
+      }
+
+      &:first-child SPAN {
+        font-weight: bold;
+        color: rgb(var(--red));
+      }
+
+      &:last-child A:nth-child(n + 2)::before {
+        margin: 0 1rem;
+        content: "|";
+
+        @media screen and (max-width: 768px) {
+          margin: 0 0.4rem;
+        }
+      }
+
+      &:last-child A:last-child {
+        @media screen and (max-width: 768px) {
+          display: block;
+          margin-top: 0.5rem;
+        }
+
+        &::before {
+          @media screen and (max-width: 768px) {
+            content: none;
+          }
+        }
+      }
+
+      .logoSDC {
+        display: inline-block;
+        margin-inline: 0.5rem;
+        width: 2rem;
+        vertical-align: middle;
+        filter: hue-rotate(180deg);
+      }
+    }
+  }
+}

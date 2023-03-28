@@ -1,0 +1,44 @@
+/*********************************************************************************************************************
+  LANGUAGE
+*********************************************************************************************************************/
+#language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: normal 14px text;
+  color: rgb(6, 177, 154);
+  cursor: pointer;
+
+  &::after {
+    margin-left: 5px;
+    content: "▼";
+  }
+
+  &.open::after {
+    content: "▲";
+  }
+
+  UL {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    left: auto;
+    top: 30px;
+    border: 1px solid var(--greenDark);
+    border-radius: 6px;
+    padding: 10px 50px 10px 10px;
+    background-color: var(--greyLight);
+    line-height: 1.6rem !important;
+    color: black;
+
+    LI {
+      text-align: left;
+      font-family: text;
+
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}

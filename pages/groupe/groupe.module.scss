@@ -1,0 +1,156 @@
+/*********************************************************************************************************************
+  GROUP
+*********************************************************************************************************************/
+#group {
+  background-color: rgb(var(--greygrey));
+
+  // Visual
+  // ----------------------------------------------------------------
+  &.mes {
+    .visual {
+      background-image: url(../../assets/images/mes-intro.webp);
+    }
+  }
+  &.i2s {
+    .visual {
+      background-image: url(../../assets/images/i2s-intro.webp);
+
+      H1 {
+        @media screen and (max-width: 768px) {
+          font-size: 6vw;
+        }
+      }
+    }
+  }
+  &.c2s {
+    .visual {
+      background-image: url(../../assets/images/c2s-intro.webp);
+    }
+  }
+
+  // SECTIONS
+  SECTION {
+    @media screen and (max-width: 768px) {
+      padding-block: 90px;
+    }
+
+    @media screen and (min-width: 769px) {
+      padding-block: 180px;
+    }
+
+    &.quinconce {
+      display: flex;
+      padding-bottom: 0;
+
+      @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
+
+      @media screen and (min-width: 769px) {
+        gap: 3rem;
+      }
+
+      &:nth-child(odd) {
+        @media screen and (min-width: 769px) {
+          flex-direction: row-reverse;
+        }
+      }
+
+      .im {
+        border-radius: 7px;
+        background: url(../../assets/images/monaco-intro.webp) fixed no-repeat right bottom / cover;
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          height: 200px;
+        }
+
+        @media screen and (min-width: 769px) {
+          width: 50%;
+        }
+      }
+
+      .txt {
+        @media screen and (max-width: 768px) {
+        }
+
+        @media screen and (min-width: 769px) {
+          width: 50%;
+        }
+
+        P {
+          margin-top: 1rem;
+          text-align: justify;
+        }
+      }
+    }
+
+    &#strategy {
+      margin-top: 180px;
+      background-color: rgb(var(--grey));
+    }
+
+    &#keys {
+      background-color: rgb(var(--greyLight));
+    }
+
+    &#seaWergie {
+      display: flex;
+      align-items: center;
+      min-height: 90vh;
+      background: url(../../assets/images/sea-wergie.webp) no-repeat center center / cover;
+
+      .content {
+        & > DIV {
+          margin-bottom: 5vh;
+          background-image: linear-gradient(to right, rgb(var(--blueDark), 0.5) 50%, transparent);
+          color: white;
+          text-shadow: 1px 1px 0px black;
+
+          @media screen and (max-width: 768px) {
+            padding: 1rem;
+          }
+
+          @media screen and (min-width: 769px) {
+            padding: 2rem;
+            width: 50vw;
+          }
+
+          H2 {
+            color: white;
+
+            &::first-letter {
+              color: red;
+            }
+          }
+
+          P {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+
+            @media screen and (max-width: 768px) {
+            }
+
+            @media screen and (min-width: 769px) {
+              width: 60%;
+            }
+          }
+
+          DIV {
+            margin-top: 1.5rem;
+            font-weight: bold;
+          }
+
+          BUTTON {
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  &.mes + FOOTER {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,498 @@
+/*********************************************************************************************************************
+  SPECIFIC FONTS
+*********************************************************************************************************************/
+@font-face {
+  font-family: "un";
+  src: url("../assets/fonts/un.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: "de";
+  src: url("../assets/fonts/de.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+/*********************************************************************************************************************
+  CONSTANTES
+*********************************************************************************************************************/
+:root {
+  --minSize: 1536px;
+  --maxSize: 1920px;
+  --margins: 6rem;
+  --marginsMob: 4rem;
+
+  --beigeLight: #fcebe1;
+  --beige: #fdc19d;
+
+  --brown: #3a1a0a;
+
+  --orangeLight: #fdc19d;
+  --orange: #e36516;
+
+  --red: 240, 2, 1;
+  --blue: 0, 5, 249;
+  --green: 10, 235, 111;
+
+  --blueLight: 83, 169, 209;
+  --blueDark: 22, 36, 46;
+
+  --greenLight: 0, 172, 177;
+  --greenDark: 0, 89, 99;
+  --greenMask: 76, 138, 145;
+
+  --greyPale: 252, 247, 255;
+  --greyLight: 225, 222, 223;
+  --greygrey: 255, 240, 240;
+  --grey: 179, 179, 179;
+}
+
+@layer base {
+  /*********************************************************************************************************************
+    COMMON RULES
+  *********************************************************************************************************************/
+  * {
+    position: relative;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  HTML,
+  BODY {
+    font-family: un, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+      Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 16px;
+    background-color: rgb(var(--greyPale));
+    scroll-behavior: smooth;
+  }
+
+  H1 {
+    font-weight: bold;
+    color: rgb(var(--blueDark));
+    // text-transform: uppercase;
+    letter-spacing: 0.2rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+      line-height: 2.1rem;
+    }
+
+    @media screen and (min-width: 769px) {
+      font-size: 3.2rem;
+      line-height: 3rem;
+    }
+
+    &::first-letter {
+      color: red;
+    }
+  }
+
+  H2 {
+    font-weight: bold;
+    // text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    color: rgb(var(--blueDark));
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.6rem;
+      line-height: 1.7rem;
+    }
+
+    @media screen and (min-width: 769px) {
+      font-size: 2.2rem;
+      line-height: 2.3rem;
+    }
+
+    &::first-letter {
+      color: red;
+    }
+  }
+
+  H3 {
+    font-weight: bold;
+    color: rgb(var(--blueDark));
+    letter-spacing: 0.05rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.2rem;
+      line-height: 1.3rem;
+    }
+
+    @media screen and (min-width: 769px) {
+      font-size: 1.5rem;
+      line-height: 1.6rem;
+    }
+
+    &::first-letter {
+      color: red;
+    }
+  }
+
+  A {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  UL {
+    list-style: none;
+  }
+
+  .inter {
+    display: flex;
+    align-items: center;
+    height: 40vh;
+    background: url(../assets/images/monaco-inter.webp) fixed no-repeat center center / cover;
+
+    .content {
+      display: flex;
+
+      & > DIV {
+        width: 1000px;
+        padding: 2rem;
+        background-image: linear-gradient(to right, rgb(var(--blueDark), 0.5) 50%, transparent);
+        color: white;
+        text-shadow: 1px 1px 0px black;
+
+        H2 {
+          color: white;
+
+          &::first-letter {
+            color: red;
+          }
+        }
+
+        P {
+          margin-top: 1rem;
+          font-size: 1.2rem;
+
+          @media screen and (max-width: 768px) {
+          }
+
+          @media screen and (min-width: 769px) {
+            width: 60%;
+          }
+        }
+
+        DIV {
+          margin-top: 1.5rem;
+          font-weight: bold;
+        }
+
+        BUTTON {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+
+  // Form elements
+  //////////////////////////////////////////////////////////////////////////
+  // Inputs
+  .inputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
+
+    &::before {
+      position: absolute;
+      z-index: 1;
+      left: 3.5rem;
+      border-radius: 0.5rem;
+      width: 0.12rem;
+      height: 30%;
+      background-color: white;
+      content: "";
+    }
+
+    INPUT {
+      width: 100%;
+      max-height: 3rem;
+      padding: 1.8rem 2.5rem 1.8rem 4.3rem;
+      font-size: 1.3rem;
+      border: 1px solid white;
+      border-radius: 4px;
+      outline: none;
+      background-color: rgb(var(--blueDark));
+      color: rgb(var(--red));
+
+      &:focus,
+      &.notEmpty {
+        border-color: white;
+
+        & + LABEL {
+          left: 0.8rem;
+          top: 0%;
+          width: auto;
+          background-color: rgb(var(--blueDark));
+
+          & + I {
+            color: rgb(var(--greyLight));
+          }
+        }
+      }
+
+      &.ok {
+        color: rgb(var(--green));
+
+        & + LABEL + I {
+          color: rgb(var(--blue));
+        }
+      }
+    }
+
+    LABEL {
+      position: absolute;
+      left: 4.3rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: calc(100% - 4.4rem);
+      padding: 0 0.3rem;
+      background-color: rgb(var(--greyLight));
+      transition: 0.2s ease-in-out;
+      color: #ccc;
+
+      & + I {
+        position: absolute;
+        display: flex;
+        left: 1.2rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1.3rem;
+        font-size: 1.2rem;
+        color: #ccc;
+      }
+    }
+  }
+
+  // Textareas
+  TEXTAREA {
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 1rem;
+    font-family: inherit;
+    font-size: 1.3rem;
+
+    &::placeholder {
+      color: #ccc;
+    }
+  }
+
+  // Buttons
+  BUTTON {
+    z-index: 1;
+    border-radius: 4px;
+    padding: 0.5rem 2.5rem;
+    min-height: 3rem;
+    background-color: rgb(var(--blueDark));
+    // font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease-out 0s;
+
+    &::before {
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      top: 50%;
+      border-radius: 4px;
+      height: 0;
+      width: 0;
+      content: "";
+      transform: none;
+      transition: 0.2s;
+    }
+
+    &:hover {
+      // color: var(--beige);
+
+      &::before {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(var(--red));
+      }
+    }
+  }
+}
+
+// Recurrent styles
+//////////////////////////////////////////////////////////////////////////
+// Common classes
+.containerMin {
+  margin-inline: auto;
+
+  @media screen and (max-width: 768px) {
+    width: calc(100% - 2rem);
+  }
+
+  @media screen and (min-width: 769px) {
+    width: min(var(--minSize), calc(100% - 3rem));
+  }
+}
+
+.containerMax {
+  margin-inline: auto;
+
+  @media screen and (max-width: 768px) {
+    width: calc(100% - 2rem);
+  }
+
+  @media screen and (min-width: 769px) {
+    width: min(var(--maxSize), calc(100% - 3rem));
+  }
+}
+
+.titles {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+BODY:not(#HomePage) HEADER {
+  background-color: rgb(var(--blueDark));
+  color: white;
+}
+
+// First visual
+#visual {
+  display: flex;
+  align-items: flex-end;
+  height: 50vh;
+  background-color: rgb(var(--greyPale));
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  &::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(var(--blueDark), 0.5);
+    content: "";
+  }
+
+  .content {
+    z-index: 10;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 5vh;
+    }
+
+    @media screen and (min-width: 769px) {
+      margin-bottom: 5vh;
+    }
+
+    & > DIV {
+      // background-image: linear-gradient(to right, rgb(var(--blueDark), 0.5) 50%, transparent);
+      color: #ffffffdd;
+      text-shadow: 1px 1px 0px black;
+
+      @media screen and (max-width: 768px) {
+        padding: 1rem;
+      }
+
+      @media screen and (min-width: 769px) {
+        padding: 2rem;
+        width: 1000px;
+      }
+
+      H1 {
+        color: rgb(var(--greyPale));
+
+        &::first-letter {
+          color: red;
+        }
+      }
+
+      P {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+
+        @media screen and (max-width: 768px) {
+        }
+
+        @media screen and (min-width: 769px) {
+          width: 60%;
+        }
+      }
+
+      DIV {
+        margin-top: 1.5rem;
+        font-weight: bold;
+      }
+
+      BUTTON {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+#HomePage #visual {
+  height: 100vh;
+
+  &::after {
+    display: none;
+  }
+  .content {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 5vh;
+    }
+
+    @media screen and (min-width: 769px) {
+      margin-bottom: 15vh;
+    }
+
+    & > DIV {
+      background-image: linear-gradient(to right, rgb(var(--blueDark), 0.5) 50%, transparent);
+    }
+  }
+}
+
+#mask {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(var(--blueDark), 0.8);
+
+  &.on {
+    display: flex;
+  }
+
+  DIV:first-child {
+    display: flex;
+    cursor: pointer;
+
+    IMG {
+      max-height: 1100px;
+    }
+  }
+
+  DIV:last-child {
+    position: absolute;
+    right: 3rem;
+    top: 1rem;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+  }
+}

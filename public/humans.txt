@@ -1,0 +1,17 @@
+/* TEAM */
+	Copyright: Monaco Electricté System
+	Contact: Patrick Gragnany
+	Location: Bloc B – Zone F4/6, avenue Prince Albert II - 98000 Monaco
+	Phone: +377 97 98 80 00
+
+	Powered by: Inforca / Webforca
+	Site: https://infroca.mc
+	Contact: Stéphane DesPLACES
+	Location: 2 rue du Gabian, Monaco
+	Phone: +377 97 77 25 52
+
+/* SITE */
+	Last update: 2023/03/24
+	Language: French
+	Standards: ReactJS/NextJS, HTML5, CSS3
+	Doctype: HTML5

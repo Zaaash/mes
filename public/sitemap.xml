@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"  xmlns:image="https://www.google.com/schemas/sitemap-image/1.1"> 
+<url>
+  <loc>https://vinzen.fr/</loc>
+  <priority>1.0</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-02-18</lastmod>
+</url>
+<url>
+  <loc>https://vinzen.fr/#qui-suis-je</loc>
+  <priority>0.5</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2023-02-18</lastmod>
+</url>
+<url>
+  <loc>https://vinzen.fr/#massages</loc>
+  <priority>0.5</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2023-02-18</lastmod>
+</url>
+<url>
+  <loc>https://vinzen.fr/#prices</loc>
+  <priority>0.5</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2023-02-18</lastmod>
+</url>
+<url>
+  <loc>https://vinzen.fr/#contact</loc>
+  <priority>0.5</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2023-02-18</lastmod>
+</url>
+<url>
+  <loc>https://vinzen.fr/#hours</loc>
+  <priority>0.5</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-02-18</lastmod>
+</url>
+<url>
+  <loc>https://vinzen.fr/massage/reequilibrage-energetique</loc>
+  <priority>1.0</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-02-18</lastmod>
+</url>
+<url>
+  <loc>https://vinzen.fr/massage/sensoriel</loc>
+  <priority>1.0</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-02-18</lastmod>
+</url>
+<url>
+  <loc>https://vinzen.fr/massage/cranien</loc>
+  <priority>1.0</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-02-18</lastmod>
+</url>
+<url>
+  <loc>https://vinzen.fr/massage/sensuel</loc>
+  <priority>1.0</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-02-18</lastmod>
+</url>
+</urlset>

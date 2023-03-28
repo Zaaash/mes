@@ -1,0 +1,38 @@
+/*********************************************************************************************************************
+  HEADER
+*********************************************************************************************************************/
+#header {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  transition: all 0.5s;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &.inScroll {
+    background-color: rgb(var(--blueDark));
+    color: white;
+  }
+
+  // Logo
+  //////////////////////////////////////////////////////////////////////////
+  #logo {
+    @media screen and (max-width: 768px) {
+      margin-left: -0.5rem;
+      width: 400px;
+    }
+
+    @media screen and (min-width: 769px) {
+      width: 270px;
+      cursor: pointer;
+    }
+  }
+}

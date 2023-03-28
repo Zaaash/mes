@@ -1,0 +1,405 @@
+/*********************************************************************************************************************
+  HOME PAGE
+*********************************************************************************************************************/
+#home {
+  // Visual
+  // ----------------------------------------------------------------
+  .visual {
+    background-image: url(../assets/images/monaco-intro.webp);
+  }
+
+  // Group
+  // ----------------------------------------------------------------
+  #group {
+    background-color: rgb(var(--greygrey));
+    text-align: center;
+
+    @media screen and (max-width: 640px) {
+      padding-block: 80px 150px;
+    }
+
+    @media screen and (min-width: 641px) {
+      padding-block: 150px 200px;
+    }
+
+    .content {
+      .title {
+        display: flex;
+        flex-direction: column-reverse;
+
+        H2 {
+          color: rgb(var(--blueDark));
+        }
+
+        SPAN {
+          margin-bottom: 1rem;
+          font-size: 0.9rem;
+          color: rgb(var(--blueLight));
+        }
+      }
+
+      .blocks {
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+        margin-top: 3.5rem;
+
+        @media screen and (max-width: 640px) {
+          flex-direction: column;
+        }
+
+        .block {
+          flex: 1;
+          border: 1px solid #eee;
+          padding: 0 2rem 5rem;
+          text-align: left;
+          cursor: pointer;
+
+          @media screen and (max-width: 768px) {
+            box-shadow: 0 0 12px #ddd;
+            background-color: white;
+          }
+
+          @media screen and (min-width: 769px) {
+            &:hover {
+              box-shadow: 0 0 12px #ddd;
+              background-color: white;
+
+              .visuel IMG {
+                transform: scale(1.1);
+              }
+            }
+          }
+
+          .visuel {
+            margin-inline: -2rem;
+            overflow: hidden;
+
+            IMG {
+              transition: all 0.2s;
+            }
+          }
+
+          .logo {
+            position: absolute;
+            transform: translateY(-52px);
+            right: 0;
+            width: 30%;
+          }
+
+          H3 {
+            margin-top: 2.7rem;
+          }
+
+          P {
+            margin-top: 0.5rem;
+            color: rgb(var(--grey));
+          }
+
+          .more {
+            position: absolute;
+            bottom: 2rem;
+            display: flex;
+            align-items: center;
+
+            &.red {
+              color: rgb(var(--red));
+            }
+
+            &.blue {
+              color: rgb(var(--blue));
+            }
+
+            &.green {
+              color: rgb(var(--green));
+            }
+
+            SVG {
+              display: flex;
+              align-items: center;
+              margin-left: 1.2rem;
+              width: 1.2rem;
+              transform: scaleX(150%) translateY(2px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Brevet
+  // ----------------------------------------------------------------
+  #brevet {
+    background-color: rgb(var(--greyLight));
+
+    @media screen and (max-width: 768px) {
+      padding-block: 100px;
+    }
+
+    @media screen and (min-width: 769px) {
+      padding-block: 200px;
+    }
+
+    .content {
+      display: flex;
+      gap: 3rem;
+
+      @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      @media screen and (min-width: 769px) {
+      }
+
+      P {
+        margin-top: 1rem;
+
+        @media screen and (max-width: 768px) {
+          text-align: justify;
+        }
+
+        @media screen and (min-width: 769px) {
+          width: 75%;
+        }
+      }
+    }
+  }
+
+  // Réalisations
+  // ----------------------------------------------------------------
+  #projects {
+    background-color: rgb(var(--blueDark));
+
+    @media screen and (max-width: 768px) {
+      padding-block: 80px;
+    }
+
+    @media screen and (min-width: 769px) {
+      padding-block: 150px;
+    }
+
+    .content {
+      text-align: center;
+
+      H2 {
+        display: block;
+        text-align: center;
+        color: white;
+      }
+
+      .subTitle {
+        display: block;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        color: #ffffffaa;
+      }
+
+      .reals {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 3rem;
+
+        .real {
+          background-position: center center;
+          background-size: cover;
+          backdrop-filter: brightness(50%);
+          overflow: hidden;
+          text-align: left;
+
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            height: 50vh;
+
+            &:nth-child(n + 2) {
+              display: none;
+            }
+          }
+
+          @media screen and (min-width: 769px) {
+            width: 17%;
+            height: 18vw;
+          }
+
+          &::before {
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(var(--blueDark), 0.4);
+            content: "";
+            transition: all 0.4s;
+          }
+
+          .descr {
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            bottom: -170px;
+            width: 100%;
+            padding: 1.5rem;
+            transition: all 0.4s;
+            color: white;
+
+            .title {
+              font-size: 1.1rem;
+              font-weight: bold;
+              text-transform: uppercase;
+            }
+
+            .txt {
+              margin-top: 1rem;
+              opacity: 0.7;
+            }
+
+            BUTTON {
+              margin-top: 1rem;
+            }
+          }
+
+          &:hover {
+            &::before {
+              opacity: 0;
+            }
+
+            .descr {
+              bottom: 0;
+              background-color: rgb(var(--blueDark), 0.6);
+            }
+          }
+        }
+
+        & + BUTTON {
+          margin-top: 3rem;
+          background-color: rgb(var(--grey));
+        }
+      }
+    }
+  }
+
+  // News & events
+  // ----------------------------------------------------------------
+  #news {
+    background-color: rgb(var(--greygrey));
+
+    @media screen and (max-width: 768px) {
+      padding-block: 80px;
+    }
+
+    @media screen and (min-width: 769px) {
+      padding-block: 120px;
+    }
+
+    .content {
+      text-align: center;
+
+      H2 {
+        display: block;
+      }
+
+      .subTitle {
+        display: block;
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+      }
+
+      .actus {
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+        margin-top: 3.5rem;
+
+        @media screen and (max-width: 640px) {
+          flex-direction: column;
+        }
+
+        .actu {
+          flex: 1;
+          border: 1px solid #eee;
+          padding: 0 1rem 5rem;
+          text-align: left;
+          cursor: pointer;
+
+          @media screen and (max-width: 768px) {
+            &:nth-child(n + 2) {
+              display: none;
+            }
+          }
+
+          &:hover {
+            box-shadow: 0 0 12px #ddd;
+            background-color: white;
+
+            .visual IMG {
+              transform: scale(1.1);
+            }
+          }
+
+          .visual {
+            margin-inline: -1rem;
+            overflow: hidden;
+
+            IMG {
+              transition: all 0.2s;
+            }
+          }
+
+          H3 {
+            margin-top: 2rem;
+          }
+
+          P {
+            margin-top: 0.5rem;
+            color: rgb(var(--grey));
+          }
+
+          .more {
+            position: absolute;
+            bottom: 2rem;
+            display: flex;
+            align-items: center;
+
+            SVG {
+              display: flex;
+              align-items: center;
+              margin-left: 1.2rem;
+              width: 1.2rem;
+              transform: scaleX(150%) translateY(2px);
+            }
+          }
+        }
+      }
+
+      BUTTON {
+        margin-top: 3rem;
+      }
+    }
+  }
+
+  // Clients
+  // ----------------------------------------------------------------
+  #clients {
+    @media screen and (max-width: 768px) {
+      padding-block: 80px;
+    }
+
+    @media screen and (min-width: 769px) {
+      padding-block: 100px;
+    }
+
+    H2 {
+      display: block;
+      text-align: center;
+    }
+
+    .refs {
+      display: flex;
+      justify-content: center; //space-between;
+      margin-top: 5rem;
+    }
+  }
+}
