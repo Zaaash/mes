@@ -40,7 +40,7 @@
 
     &.quinconce {
       display: flex;
-      padding-bottom: 0;
+      // padding-bottom: 0;
 
       @media screen and (max-width: 768px) {
         flex-wrap: wrap;
@@ -51,7 +51,8 @@
         gap: 3rem;
       }
 
-      &:nth-child(odd) {
+      &:nth-child(odd),
+      .rev {
         @media screen and (min-width: 769px) {
           flex-direction: row-reverse;
         }
@@ -86,8 +87,142 @@
       }
     }
 
+    &#keys {
+      padding-block: 90px 30px;
+      background-color: rgb(var(--greyLight));
+
+      @media screen and (max-width: 768px) {
+        background-image: url(../../assets/images/bgCounters.webp), url(../../assets/images/bgCounters.webp);
+        background-position: 150px top, calc(100% + 250px) 50px;
+        background-repeat: repeat-y, repeat-Y;
+      }
+
+      @media screen and (min-width: 769px) {
+        background-image: url(../../assets/images/bgCounters.webp), url(../../assets/images/bgCounters.webp);
+        background-position: left center, center center;
+        background-repeat: no-repeat, no-repeat;
+        background-size: cover;
+      }
+
+      #counters {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: min(var(--maxSize), 100vw - 4rem);
+        color: rgb(var(--red));
+
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          gap: 4rem;
+          margin: 0 auto;
+          padding-block: 3rem;
+        }
+
+        @media screen and (min-width: 769px) {
+          margin: 0 auto;
+          padding-inline: 10% 12%;
+          height: 212px;
+        }
+
+        DIV {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-weight: bold;
+          letter-spacing: 0.2rem;
+
+          @media screen and (max-width: 768px) {
+            font-size: 2.5rem;
+          }
+
+          @media screen and (min-width: 769px) {
+            font-size: 4rem;
+          }
+
+          SPAN {
+            // margin-top: 0.5rem;
+            font-weight: normal;
+            color: rgb(var(--blueDark), 0.5);
+            letter-spacing: 0.1rem;
+
+            @media screen and (max-width: 768px) {
+              font-size: 1rem;
+            }
+
+            @media screen and (min-width: 769px) {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+
+    .timeline {
+      display: grid;
+      justify-content: space-between;
+      align-items: center;
+
+      @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(2, auto);
+        gap: 2rem;
+      }
+
+      @media screen and (min-width: 769px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      &::after {
+        position: absolute;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background-color: rgb(var(--red));
+        content: "";
+
+        @media screen and (max-width: 768px) {
+          left: 20%;
+        }
+
+        @media screen and (min-width: 769px) {
+          left: 40%;
+        }
+      }
+
+      DIV:nth-child(odd) {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: rgb(var(--red));
+        text-align: center;
+
+        &::after {
+          position: absolute;
+          border-radius: 50%;
+          background-color: rgb(var(--red));
+          content: "";
+
+          @media screen and (max-width: 768px) {
+            right: -22.5px;
+            top: 30%;
+            width: 12px;
+            height: 12px;
+          }
+
+          @media screen and (min-width: 769px) {
+            left: 78%;
+            top: 25%;
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+
+      DIV:nth-child(even) {
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+    }
+
     &#strategy {
-      margin-top: 180px;
       background-color: rgb(var(--grey));
 
       .core {
@@ -109,15 +244,27 @@
         }
 
         DIV {
+          cursor: pointer;
+
           &:first-child {
             grid-column: span 2;
+            cursor: default;
           }
         }
       }
     }
 
-    &#keys {
-      background-color: rgb(var(--greyLight));
+    &#values {
+      align-items: center;
+      gap: 5rem;
+
+      H3 {
+        margin-top: 1.5rem;
+      }
+
+      P {
+        margin-top: 0.35rem;
+      }
     }
 
     &#seaWergie {

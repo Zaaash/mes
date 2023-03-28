@@ -3,6 +3,7 @@ import * as pictosSol from "@fortawesome/free-solid-svg-icons"
 
 import { useEffect, useRef } from "react"
 
+import Counter from "../../components/count"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Head from "next/head"
 import Image from "next/image"
@@ -41,9 +42,27 @@ const txts: any = {
     },
     values: {
       title: "Nos valeurs",
-      txt: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      items: [
+        {
+          name: "Vision",
+          descr:
+            "Une entreprise tournée vers l’avenir au cœur des mutations technologiques. Avec I2S et C2S, MES s’engage résolument dans la révolution du numérique, toujours en quête de l’excellence technique.",
+        },
+        {
+          name: "Pérennité",
+          descr:
+            "Une structure à taille humaine, agile. Dont l’activité repose sur la récurrence pour 70% de son chiffre d’affaires. Notre structure financière est saine.",
+        },
+        {
+          name: "Indépendance",
+          descr:
+            "Une Entreprise indépendante depuis plus de 17 ans qui a toujours cultivé le sens de la responsabilité et de l’entreprenariat.",
+        },
+        {
+          name: "Proximité",
+          descr:
+            "Un acteur du numérique et de l’efficacité énergétique, nous sommes engagé dans un processus de développement durable, et conscient des enjeux environnementaux.",
+        },
       ],
     },
     strategy: {
@@ -145,10 +164,44 @@ const Mes: NextPage = () => {
           <div className={styles.im}></div>
         </section>
 
+        {/* Keys */}
+        <section id={styles.keys}>
+          <div className="containerMin">
+            <h2>{wording.keys.title}</h2>
+
+            <div id={styles.counters}>
+              <div>
+                <Counter
+                  target={40}
+                  duration={5}
+                  symbol="M"
+                />
+                <span>{"chiffre d'affaire"}</span>
+              </div>
+              <div>
+                <Counter
+                  target={170}
+                  duration={5}
+                  symbol="+"
+                />
+                <span>collaborateurs à votre service</span>
+              </div>
+              <div>
+                <Counter
+                  target={310}
+                  duration={5}
+                  symbol="+"
+                />
+                <span>personnels en production</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* History */}
         <section
           id={styles.story}
-          className={"containerMin " + styles.quinconce}
+          className={"containerMin " + styles.quinconce + " " + styles.rev}
         >
           <div className={styles.txt}>
             <h2>{wording.story.title}</h2>
@@ -157,22 +210,18 @@ const Mes: NextPage = () => {
             })}
           </div>
 
-          <div className={styles.im}></div>
-        </section>
-
-        {/* Values */}
-        <section
-          id={styles.values}
-          className={"containerMin " + styles.quinconce}
-        >
-          <div className={styles.txt}>
-            <h2>{wording.values.title}</h2>
-            {wording.values.txt.map((parag: any) => {
-              return <p key={parag.id}>{parag}</p>
-            })}
+          <div className={styles.timeline}>
+            <div>2005</div>
+            <div>Création de MES à Monaco</div>
+            <div>2006</div>
+            <div>Intégration des activités de I2S</div>
+            <div>2011</div>
+            <div>Intégration des activités de C2S</div>
+            <div>2020</div>
+            <div>Prise de participation SeaWergie</div>
+            <div>2022</div>
+            <div>Ouverture du capital au manager et à la SAM Metis Famille Casiraghi</div>
           </div>
-
-          <div className={styles.im}></div>
         </section>
 
         {/* Strategy */}
@@ -188,28 +237,48 @@ const Mes: NextPage = () => {
                 />
                 {wording.strategy.labels[0]}
               </div>
-              <div>
-                <Image
-                  src={imgs.logoI2s}
-                  alt="Logo de l'entreprise Monégasque I2S"
-                />
-                {wording.strategy.labels[1]}
-              </div>
-              <div>
-                <Image
-                  src={imgs.logoC2s}
-                  alt="Logo de l'entreprise Monégasque C2S"
-                />
-                {wording.strategy.labels[2]}
-              </div>
+              <Link href="/groupe/i2s">
+                <div title="En savoir plus sur I2S">
+                  <Image
+                    src={imgs.logoI2s}
+                    alt="Logo de l'entreprise Monégasque I2S"
+                  />
+                  {wording.strategy.labels[1]}
+                </div>
+              </Link>
+              <Link href="/groupe/c2s">
+                <div title="En savoir plus sur C2S">
+                  <Image
+                    src={imgs.logoC2s}
+                    alt="Logo de l'entreprise Monégasque C2S"
+                  />
+                  {wording.strategy.labels[2]}
+                </div>
+              </Link>
             </div>
           </div>
         </section>
 
-        {/* Keys */}
-        <section id={styles.keys}>
-          <div className="containerMin">
-            <h2>{wording.keys.title}</h2>
+        {/* Values */}
+        <section
+          id={styles.values}
+          className={"containerMin " + styles.quinconce}
+        >
+          <div className={styles.txt}>
+            <h2>{wording.values.title}</h2>
+
+            {wording.values.items.map((value: any) => {
+              return (
+                <div key={value.id}>
+                  <h3>{value.name}</h3>
+                  <p>{value.descr}</p>
+                </div>
+              )
+            })}
+          </div>
+
+          <div>
+            <Image src={imgs.offreServices} />
           </div>
         </section>
 
