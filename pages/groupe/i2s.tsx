@@ -23,7 +23,7 @@ const txts: any = {
       "Nous vous offrons une palette de compétences : concepteurs, intégrateurs, mainteneurs et opérateurs de solutions complexes à forte valeur ajoutée.",
     intro: {
       title: "I2s : Réseaux et Télécommunications",
-      descr: "En charge de l’ingénierie nécessaire a l’évolution permanente des nouvelles technologies.",
+      descr: "En charge de l’ingénierie nécessaire à l’évolution permanente des nouvelles technologies.",
     },
     metiers: [
       {
