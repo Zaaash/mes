@@ -371,6 +371,7 @@ BODY:not(#HomePage) HEADER {
   background-color: rgb(var(--greyPale));
   background-repeat: no-repeat;
   background-position: center top;
+  background-attachment: fixed;
   background-size: cover;
 
   &::after {

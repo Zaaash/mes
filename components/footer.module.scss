@@ -40,113 +40,79 @@
     .titleBlock {
       font-size: 1.1rem;
       font-weight: bold;
+      letter-spacing: 0.1rem;
 
       &::first-letter {
         color: rgb(var(--red));
       }
     }
 
-    #identity {
+    LI {
+      margin: 5px 0;
+      line-height: 1.7rem;
+    }
+
+    #footerIdentity {
       @media screen and (max-width: 768px) {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
       }
 
       @media screen and (min-width: 769px) {
       }
 
       .logo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
         @media (max-width: 640px) {
-          width: 100%;
+          width: 50%;
           text-align: center;
         }
 
         @media (min-width: 641px) {
-          width: 500px;
-        }
-      }
-
-      P {
-        @media (max-width: 640px) {
-          font-size: 1rem;
-          letter-spacing: 0.1rem;
+          width: 10vw;
         }
 
-        @media (min-width: 641px) {
-          font-size: 1.3rem;
-          letter-spacing: 0.2rem;
-        }
-      }
-
-      UL {
-        display: flex;
-        align-items: center;
-        margin-top: 15px;
-
-        LI {
-          A {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid var(--greyLight);
-            border-radius: 50px;
-            width: 50px;
-            height: 50px;
-            color: var(--greenLight);
-
-            &:hover {
-              background-color: var(--greenDark);
-              color: #fff;
-            }
+        & > DIV {
+          &:first-child {
+            grid-column: span 2;
           }
         }
       }
-    }
-
-    .sitemap {
-      LI {
-        margin: 5px 0;
-        line-height: 2rem;
-      }
-    }
-
-    #coords {
-      @media (max-width: 640px) {
-        display: none;
-      }
-
-      .inputContainer {
-        margin-top: 1rem;
-
-        INPUT:focus + LABEL {
-          background-image: linear-gradient(#604335 0%, #604335 49%, var(--beigeLight) 50%, var(--beigeLight) 100%);
-        }
-      }
-
-      BUTTON {
-        margin-top: 15px;
-        width: 100%;
-        color: var(--brown);
-      }
 
       P {
-        margin-top: 30px;
+        margin-top: 1rem;
       }
     }
-  }
 
-  #coords > DIV {
-    display: flex;
-    margin-block: 1rem;
+    #footerCoords {
+      LI {
+        display: flex;
+        align-items: center;
 
-    SVG {
-      margin-right: 0.5rem;
-      width: 1rem;
+        SVG {
+          margin-right: 0.7rem;
+          width: 1rem;
+        }
+      }
+    }
+
+    #footerHours {
+      LI {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
     }
   }
 
   // Copyright / MLs
   //////////////////////////////////////////////////////////////////////////
-  #legals {
+  #footerLegals {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -194,7 +160,7 @@
         }
       }
 
-      .logoSDC {
+      .logo {
         display: inline-block;
         margin-inline: 0.5rem;
         width: 2rem;

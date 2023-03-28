@@ -18,27 +18,28 @@ const txts: any = {
   // French
   //---------------------------------------------------------------------------------
   fr: {
-    coords: [
-      {
-        picto: pictosSol.faPhoneFlip,
-        content: "+33 (0)" + process.env.PUBLIC_TEL,
-        url: "tel:+33" + process.env.PUBLIC_TEL,
-      },
-      {
-        picto: pictosReg.faEnvelope,
-        content: process.env.PUBLIC_EMAIL_CONTACT,
-        url: "mailto:" + process.env.PUBLIC_EMAIL_CONTACT,
-      },
-      { picto: pictosReg.faMap, content: process.env.PUBLIC_ADDRESS, url: "#" },
-    ],
+    label: "Prestataire multi techniques de solutions complexes à forte valeur ajoutée.",
+    coords: {
+      title: "Coordonnées",
+      channels: [
+        {
+          picto: pictosSol.faPhoneFlip,
+          content: process.env.PUBLIC_TEL,
+          url: "tel:" + process.env.PUBLIC_TEL,
+        },
+        {
+          picto: pictosReg.faEnvelope,
+          content: process.env.PUBLIC_EMAIL_CONTACT,
+          url: "mailto:" + process.env.PUBLIC_EMAIL_CONTACT,
+        },
+        { picto: pictosReg.faMap, content: process.env.PUBLIC_ADDRESS, url: "/contact" },
+      ],
+    },
     sitemap: [
       {
         title: "Plan de site",
         links: [
           { label: "Accueil", url: "/" },
-          { label: "MES", url: "/groupe/mes" },
-          { label: "I2S", url: "/groupe/i2s" },
-          { label: "C2S", url: "/groupe/c2s" },
           { label: "Offre", url: "/offre" },
           { label: "Engagement", url: "/engagement" },
           { label: "Réalisations", url: "/realisations" },
@@ -46,22 +47,28 @@ const txts: any = {
           { label: "Contact", url: "/contact" },
         ],
       },
-    ],
-    horaires: [
       {
-        title: "Horaires d'ouverture",
-        descr: "Nous sommes disponibles aux horaires suivants :",
-        details: [
-          { jour: "Lundi", heures: "9h00 -> 17h00" },
-          { jour: "Mardi", heures: "9h00 -> 17h00" },
-          { jour: "Mercredi", heures: "9h00 -> 17h00" },
-          { jour: "Jeudi", heures: "9h00 -> 17h00" },
-          { jour: "Vendredi", heures: "9h00 -> 17h00" },
-          { jour: "Samedi", heures: "9h00 -> 17h00" },
-          { jour: "Dimanche", heures: "9h00 -> 17h00" },
+        title: "Groupe",
+        links: [
+          { label: "MES", url: "/groupe/mes" },
+          { label: "I2S", url: "/groupe/i2s" },
+          { label: "C2S", url: "/groupe/c2s" },
         ],
       },
     ],
+    hours: {
+      title: "Horaires d'ouverture",
+      descr: "Nous sommes disponibles aux horaires suivants :",
+      details: [
+        { day: "Lundi", open: "9h00 -> 17h00" },
+        { day: "Mardi", open: "9h00 -> 17h00" },
+        { day: "Mercredi", open: "9h00 -> 17h00" },
+        { day: "Jeudi", open: "9h00 -> 17h00" },
+        { day: "Vendredi", open: "9h00 -> 17h00" },
+        { day: "Samedi", open: "fermé" },
+        { day: "Dimanche", open: "fermé" },
+      ],
+    },
     legals: {
       rights: "Tous droits réservés.",
       texts: [{ label: "Mentions légales", url: "/mentions-legales" }],
@@ -88,55 +95,47 @@ export default function Footer() {
       {/* Links */}
       <section
         id={styles.links}
-        className="containerMax"
+        className="containerMin"
       >
         {/* Identity */}
-        <div id={styles.identity}>
+        <div id={styles.footerIdentity}>
           <div className={styles.logo}>
-            <Image
-              src={imgs.logoList}
-              alt=""
-            />
+            <div>
+              <Image
+                src={imgs.logoMes}
+                alt=""
+              />
+            </div>
+            <div>
+              <Image
+                src={imgs.logoI2s}
+                alt=""
+              />
+            </div>
+            <div>
+              <Image
+                src={imgs.logoC2s}
+                alt=""
+              />
+            </div>
           </div>
 
-          <p>Lorem ipsum</p>
-        </div>
-
-        {/* Coords */}
-        <div id={styles.coords}>
-          <div className={styles.titleBlock}>Coordonnées</div>
-          {wording.coords.map((coord: any, idx: number) => {
-            return (
-              <div key={idx}>
-                <div>
-                  <FontAwesomeIcon icon={coord.picto} />
-                </div>
-
-                <div>
-                  <a
-                    href={coord.url}
-                    rel="noreferrer"
-                  >
-                    {coord.content}
-                  </a>
-                </div>
-              </div>
-            )
-          })}
+          <p>{wording.label}</p>
         </div>
 
         {/* Sitemap */}
-        {wording.sitemap.map((block: any, idx1: number) => {
+        {wording.sitemap.map((block: any) => {
           return (
             <div
-              key={idx1}
+              key={block.id}
               className={styles.sitemap}
             >
               <div className={styles.titleBlock}>{block.title}</div>
+
               <ul>
-                {block.links.map((link: any, idx2: number) => {
+                {block.links.map((link: any) => {
                   return (
-                    <li key={idx2}>
+                    <li key={link.id}>
                       <Link href={link.url}>
                         <a
                           title=""
@@ -153,20 +152,59 @@ export default function Footer() {
             </div>
           )
         })}
+
+        {/* Coords */}
+        <div id={styles.footerCoords}>
+          <div className={styles.titleBlock}>{wording.coords.title}</div>
+
+          <ul>
+            {wording.coords.channels.map((coord: any) => {
+              return (
+                <li key={coord.id}>
+                  <FontAwesomeIcon icon={coord.picto} />
+
+                  <div>
+                    <a
+                      href={coord.url}
+                      rel="noreferrer"
+                    >
+                      {coord.content}
+                    </a>
+                  </div>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+
+        {/* Horaires */}
+        <div id={styles.footerHours}>
+          <div className={styles.titleBlock}>{wording.hours.title}</div>
+          <ul>
+            {wording.hours.details.map((hour: any) => {
+              return (
+                <li key={hour.id}>
+                  <span>{hour.day}</span>
+                  <span>{hour.open}</span>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
       </section>
 
       {/* Copyrights */}
-      <section id={styles.legals}>
+      <section id={styles.footerLegals}>
         <div>
           &copy;2022{copyrightCurrentDate} <span>Monaco Electricité System</span> &nbsp; | &nbsp;{" "}
           {wording.legals.rights}
         </div>
 
         <div>
-          {wording.legals.texts.map((item: any, idx: number) => {
+          {wording.legals.texts.map((item: any) => {
             return (
               <a
-                key={idx}
+                key={item.id}
                 href={item.url}
                 rel="nofollow"
                 target="_self"
@@ -181,7 +219,7 @@ export default function Footer() {
             rel="noreferrer"
           >
             Réalisé par
-            <span className={styles.logoSDC}>
+            <span className={styles.logo}>
               <Image
                 src={imgs.logoInforca}
                 alt=""
