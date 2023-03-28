@@ -28,6 +28,7 @@ const txts: any = {
     },
     offre: [
       {
+        im: imgs.offreServices,
         title: "Le service",
         txt: [
           "Nous maîtrisons notre métier, nous sommes au service de nos clients et tissons des partenariats solides.",
@@ -39,8 +40,14 @@ const txts: any = {
         ],
       },
       {
+        im: imgs.offreCompetences,
         title: "Les compétences",
-        txt: ["", "", "", "", "", ""],
+        txt: ["L’Entreprise MES C2S I2S offre une large palette de compétences multi techniques"],
+        specs: [
+          { title: "Métiers", items: ["Ingénierie", "Electrotechnique", "IT et Telecom", "Génie Climatique"] },
+          { title: "Marchés", items: ["Energie", "Infrastructures", "Tertiaire"] },
+          { title: "Cycle", items: ["Conception & Ingénierie", "Intégration", "Maintenance et exploitation"] },
+        ],
       },
     ],
   },
@@ -105,24 +112,46 @@ const Offre: NextPage = () => {
         </div>
 
         {/* Offre */}
-        {wording.offre.map((item: any) => {
-          return (
-            <section
-              key={item.id}
-              id={styles.about}
-              className={"containerMin " + styles.quinconce}
-            >
-              <div className={styles.txt}>
-                <h2>{item.title}</h2>
-                {item.txt.map((parag: any) => {
-                  return <p key={parag.id}>{parag}</p>
-                })}
-              </div>
+        <div>
+          {wording.offre.map((item: any) => {
+            return (
+              <section
+                key={item.id}
+                className={styles.quinconce}
+              >
+                <div className="containerMin">
+                  <div className={styles.txt}>
+                    <h2>{item.title}</h2>
+                    {item.txt.map((parag: any) => {
+                      return <p key={parag.id}>{parag}</p>
+                    })}
 
-              <div className={styles.im}></div>
-            </section>
-          )
-        })}
+                    {item.specs &&
+                      item.specs.map((spec: any) => {
+                        return (
+                          <div
+                            key={spec.id}
+                            className={styles.spec}
+                          >
+                            <h3>{spec.title}</h3>
+                            <ul>
+                              {spec.items.map((item: any) => {
+                                return <li key={item.id}>{item}</li>
+                              })}
+                            </ul>
+                          </div>
+                        )
+                      })}
+                  </div>
+                  <div
+                    className={styles.im}
+                    style={{ backgroundImage: `url(${Object.values(item.im)[0]})` }}
+                  ></div>
+                </div>
+              </section>
+            )
+          })}
+        </div>
       </main>
     </>
   )

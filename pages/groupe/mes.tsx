@@ -47,10 +47,11 @@ const txts: any = {
       ],
     },
     strategy: {
-      title: "Notre Stratégie et Core business",
-      txt: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      title: "Core business",
+      labels: [
+        "MES est l’origine de notre entreprise, elle regroupe les métiers historiques de l'Energie, de la distribution, de l’éclairage et des énergies renouvelables.",
+        "Réseaux et Télécommunications",
+        "Chauffage et Climatisation",
       ],
     },
     keys: {
@@ -178,6 +179,30 @@ const Mes: NextPage = () => {
         <section id={styles.strategy}>
           <div className="containerMin">
             <h2>{wording.strategy.title}</h2>
+
+            <div className={styles.core}>
+              <div>
+                <Image
+                  src={imgs.logoMes}
+                  alt="Logo de l'entreprise Monégasque Mes"
+                />
+                {wording.strategy.labels[0]}
+              </div>
+              <div>
+                <Image
+                  src={imgs.logoI2s}
+                  alt="Logo de l'entreprise Monégasque I2S"
+                />
+                {wording.strategy.labels[1]}
+              </div>
+              <div>
+                <Image
+                  src={imgs.logoC2s}
+                  alt="Logo de l'entreprise Monégasque C2S"
+                />
+                {wording.strategy.labels[2]}
+              </div>
+            </div>
           </div>
         </section>
 

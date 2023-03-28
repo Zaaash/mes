@@ -8,7 +8,7 @@
   // ----------------------------------------------------------------
   &.mes {
     .visual {
-      background-image: url(../../assets/images/mes-intro.webp);
+      background-image: url(../../assets/images/intro-mes.webp);
     }
   }
   &.i2s {
@@ -89,6 +89,31 @@
     &#strategy {
       margin-top: 180px;
       background-color: rgb(var(--grey));
+
+      .core {
+        display: grid;
+        align-items: flex-end;
+        gap: 3rem;
+        text-align: center;
+        font-weight: bold;
+        color: rgb(var(--blueDark));
+
+        @media screen and (max-width: 768px) {
+          grid-template-columns: repeat(2, 1fr);
+          margin-top: 2rem;
+        }
+
+        @media screen and (min-width: 769px) {
+          grid-template-columns: repeat(4, 1fr);
+          font-size: 1.2rem;
+        }
+
+        DIV {
+          &:first-child {
+            grid-column: span 2;
+          }
+        }
+      }
     }
 
     &#keys {

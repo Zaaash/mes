@@ -28,6 +28,7 @@ const txts: any = {
     },
     engagement: [
       {
+        im: imgs.engagementEngage,
         title: "Nous nous engageons",
         txt: [
           "Jour après jour, nous concilions réussite économique et respect de l’humain et de l’environnement.",
@@ -38,6 +39,7 @@ const txts: any = {
         ],
       },
       {
+        im: imgs.engagementRecrute,
         title: "Nous recrutons durablement",
         txt: [
           "Nous construisons l’entreprise avec l’idée que les ressources humaines sont notre capital d’aujourd’hui et de demain et nous privilégions l’emploi et la formation.",
@@ -108,24 +110,29 @@ const Engagement: NextPage = () => {
         </div>
 
         {/* Engagement */}
-        {wording.engagement.map((item: any) => {
-          return (
-            <section
-              key={item.id}
-              id={styles.about}
-              className={"containerMin " + styles.quinconce}
-            >
-              <div className={styles.txt}>
-                <h2>{item.title}</h2>
-                {item.txt.map((parag: any) => {
-                  return <p key={parag.id}>{parag}</p>
-                })}
-              </div>
-
-              <div className={styles.im}></div>
-            </section>
-          )
-        })}
+        <div>
+          {wording.engagement.map((item: any) => {
+            return (
+              <section
+                key={item.id}
+                className={styles.quinconce}
+              >
+                <div className="containerMin">
+                  <div className={styles.txt}>
+                    <h2>{item.title}</h2>
+                    {item.txt.map((parag: any) => {
+                      return <p key={parag.id}>{parag}</p>
+                    })}
+                  </div>
+                  <div
+                    className={styles.im}
+                    style={{ backgroundImage: `url(${Object.values(item.im)[0]})` }}
+                  ></div>
+                </div>
+              </section>
+            )
+          })}
+        </div>
       </main>
     </>
   )
