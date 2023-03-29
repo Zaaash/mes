@@ -3,6 +3,7 @@ import actu2 from "../../assets/images/actu-exlairage-exterieur-mareterra.webp"
 import actu3 from "../../assets/images/actu-extension-data-center.webp"
 import actu4 from "../../assets/images/actu-extension-puissance-centrale-fontvieille.webp"
 import brevet from "../../assets/images/fournisseur-brevete-du-prince-monaco.webp"
+import c2sAbout from "../../assets/images/c2s-about.webp"
 import cardio from "../../assets/images/centre-cardio-thoracique-monaco.webp"
 import engagementEngage from "../../assets/images/engagement-engage.webp"
 import engagementRecrute from "../../assets/images/engagement-recrute.webp"
@@ -28,7 +29,13 @@ import mesServices from "../../assets/images/mes-services.webp"
 import offreCompetences from "../../assets/images/offre-competences.webp"
 import offreServices from "../../assets/images/offre-services.webp"
 import pictoAcces from "../../assets/images/picto-acces.webp"
+import pictoChauffClim from "../../assets/images/picto-chauffClim.webp"
+import pictoConseil from "../../assets/images/picto-conseil.webp"
 import pictoFirewall from "../../assets/images/picto-firewall.webp"
+import pictoIncendie from "../../assets/images/picto-incendie.webp"
+import pictoMaintenance from "../../assets/images/picto-maintenance.webp"
+import pictoPerfNrj from "../../assets/images/picto-perfNrj.webp"
+import pictoPlomberie from "../../assets/images/picto-plomberie.webp"
 import pictoTel from "../../assets/images/picto-telephonie.webp"
 import pictoVideo from "../../assets/images/picto-video.webp"
 import pictoVisio from "../../assets/images/picto-visio.webp"
@@ -56,6 +63,7 @@ export {
   actu3,
   actu4,
   brevet,
+  c2sAbout,
   cardio,
   engagementEngage,
   engagementRecrute,
@@ -80,6 +88,12 @@ export {
   pictoTel,
   pictoWifi,
   pictoAcces,
+  pictoChauffClim,
+  pictoConseil,
+  pictoIncendie,
+  pictoMaintenance,
+  pictoPerfNrj,
+  pictoPlomberie,
   pictoVideo,
   pictoFirewall,
   pictoVisio,

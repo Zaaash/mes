@@ -160,8 +160,8 @@
       #counters {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        width: min(var(--maxSize), 100vw - 4rem);
+        align-items: flex-start;
+        margin-top: 4rem;
         color: rgb(var(--red));
 
         @media screen and (max-width: 768px) {
@@ -172,8 +172,8 @@
         }
 
         @media screen and (min-width: 769px) {
-          margin: 0 auto;
-          padding-inline: 10% 12%;
+          // margin-left: 0px;
+          // padding-inline: 10% 20%;
           height: 212px;
         }
 
@@ -203,7 +203,11 @@
             }
 
             @media screen and (min-width: 769px) {
-              font-size: 2rem;
+              font-size: 1.5rem;
+            }
+
+            &:nth-child(2) {
+              font-size: 0.9rem;
             }
           }
         }
@@ -383,6 +387,10 @@
 
     &#metiers {
       background-color: rgb(var(--greyPale));
+
+      .titles {
+        margin-bottom: 5rem;
+      }
 
       .content {
         display: flex;

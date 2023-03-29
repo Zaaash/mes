@@ -169,12 +169,15 @@ const Mes: NextPage = () => {
           <div className="containerMin">
             <h2>{wording.keys.title}</h2>
 
-            <div id={styles.counters}>
+            <div
+              id={styles.counters}
+              className="containerMax"
+            >
               <div>
                 <Counter
                   target={60}
                   duration={5}
-                  symbol="M"
+                  symbol="M€"
                 />
                 <span>{"chiffre d'affaire"}</span>
               </div>
@@ -185,6 +188,7 @@ const Mes: NextPage = () => {
                   symbol="+"
                 />
                 <span>collaborateurs à votre service</span>
+                <span>(Ingénieurs d’étude, chargés d’affaires, conducteurs de travaux, chef de chantiers)</span>
               </div>
               <div>
                 <Counter
