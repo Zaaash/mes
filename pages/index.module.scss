@@ -320,9 +320,8 @@
         .actu {
           flex: 1;
           border: 1px solid #eee;
-          padding: 0 1rem 5rem;
+          padding: 0 1rem 3rem;
           text-align: left;
-          cursor: pointer;
 
           @media screen and (max-width: 768px) {
             &:nth-child(n + 2) {
@@ -330,22 +329,8 @@
             }
           }
 
-          &:hover {
-            box-shadow: 0 0 12px #ddd;
-            background-color: white;
-
-            .visual IMG {
-              transform: scale(1.1);
-            }
-          }
-
           .visual {
             margin-inline: -1rem;
-            overflow: hidden;
-
-            IMG {
-              transition: all 0.2s;
-            }
           }
 
           H3 {
@@ -355,21 +340,6 @@
           P {
             margin-top: 0.5rem;
             color: rgb(var(--grey));
-          }
-
-          .more {
-            position: absolute;
-            bottom: 2rem;
-            display: flex;
-            align-items: center;
-
-            SVG {
-              display: flex;
-              align-items: center;
-              margin-left: 1.2rem;
-              width: 1.2rem;
-              transform: scaleX(150%) translateY(2px);
-            }
           }
         }
       }

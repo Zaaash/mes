@@ -547,11 +547,6 @@ const Home: NextPage = () => {
                     <h3>{item.title}</h3>
 
                     <p>{item.txt}</p>
-
-                    <div className={styles.more}>
-                      <span>En savoir plus</span>
-                      <FontAwesomeIcon icon={pictosSol.faArrowRightLong} />
-                    </div>
                   </div>
                 )
               })}
