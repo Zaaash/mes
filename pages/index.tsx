@@ -146,6 +146,7 @@ const txts: any = {
         },
       ],
       button: "En savoir plus",
+      all: "Voir tous les posts",
     },
     clients: {
       title: "Nos clients",
@@ -555,6 +556,10 @@ const Home: NextPage = () => {
                 )
               })}
             </div>
+
+            <button type="button">
+              <Link href="/actualites">{wording.news.all}</Link>
+            </button>
           </div>
         </section>
 

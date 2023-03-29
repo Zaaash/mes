@@ -88,7 +88,7 @@ const txts: any = {
           descr: "Un support dédié et une réactivité à l’écoute des clients/partenaires.",
         },
         {
-          name: "Féférer",
+          name: "Fédérer",
           descr:
             "Un ensemble de solution testé et référencé avec attention pour répondre favorablement aux attentes/enjeux de demain et d’aujourd’hui.",
         },

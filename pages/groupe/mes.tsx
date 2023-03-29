@@ -41,7 +41,7 @@ const txts: any = {
       ],
     },
     values: {
-      title: "Nos valeurs",
+      title: "Nos atouts",
       items: [
         {
           name: "Vision",

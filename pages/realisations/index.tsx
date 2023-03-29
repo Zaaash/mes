@@ -34,7 +34,7 @@ const txts: any = {
         { id: "cardio", name: "Bureaux Scorpio", im: imgs.scorpio },
         { id: "cardio", name: "Société de Bains de Mer", im: imgs.sbm },
         { id: "cardio", name: "Centre hospitalier Princesse Grâce", im: imgs.r4 },
-        { id: "cardio", name: "Tour Les Girofflées", im: imgs.giroflees },
+        { id: "cardio", name: "Tour Les Giroflées", im: imgs.giroflees },
         { id: "cardio", name: "Stade Louis II", im: imgs.stade },
         { id: "cardio", name: "Hôtel de Paris", im: imgs.hotelParis },
         { id: "cardio", name: "Yacht Club de Monaco", im: imgs.yachtClub },
