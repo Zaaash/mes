@@ -31,17 +31,17 @@ const txts: any = {
       subTitle: "Survolez à votre guise toutes les facettes de notre savoir faire et cliquez pour en savoir plus...",
       reals: [
         { id: "cardio", name: "Centre cardio-thoracique de Monaco", im: imgs.cardio },
-        { id: "cardio", name: "Lorem ipsum", im: imgs.r2 },
-        { id: "cardio", name: "Lorem ipsum", im: imgs.r3 },
+        { id: "cardio", name: "Bureaux Scorpio", im: imgs.scorpio },
+        { id: "cardio", name: "Société de Bains de Mer", im: imgs.sbm },
         { id: "cardio", name: "Centre hospitalier Princesse Grâce", im: imgs.r4 },
-        { id: "cardio", name: "Forum Grimaldi", im: imgs.r5 },
-        { id: "cardio", name: "Lorem ipsum", im: imgs.r6 },
-        { id: "cardio", name: "Hôtel du couvent (Nice)", im: imgs.r7 },
-        { id: "cardio", name: "Lorem ipsum", im: imgs.r8 },
-        { id: "cardio", name: "Lorem ipsum", im: imgs.r9 },
-        { id: "cardio", name: "Lorem ipsum", im: imgs.r10 },
-        { id: "cardio", name: "Lorem ipsum", im: imgs.r11 },
-        { id: "cardio", name: "Lorem ipsum", im: imgs.r12 },
+        { id: "cardio", name: "Tour Les Girofflées", im: imgs.giroflees },
+        { id: "cardio", name: "Stade Louis II", im: imgs.stade },
+        { id: "cardio", name: "Hôtel de Paris", im: imgs.hotelParis },
+        { id: "cardio", name: "Yacht Club de Monaco", im: imgs.yachtClub },
+        { id: "cardio", name: "Grimaldi Forum", im: imgs.r5 },
+        { id: "cardio", name: "Mareterra", im: imgs.mareterra },
+        { id: "cardio", name: "Hôtel Le Couvent", im: imgs.r7 },
+        { id: "cardio", name: "La réserve Ramatuelle", im: imgs.r10 },
       ],
     },
   },
@@ -130,6 +130,13 @@ const Realisations: NextPage = () => {
         <section id={styles.gallery}>
           <h2>{wording.gallery.title}</h2>
           <span>{wording.gallery.subTitle}</span>
+
+          <div id={styles.filters}>
+            <div className={styles.on}>Tous les projets</div>
+            <div>MES</div>
+            <div>I2S</div>
+            <div>C2S</div>
+          </div>
 
           <div
             id={styles.reals}

@@ -8,6 +8,28 @@
     background-image: url(../../assets/images/centre-cardio-thoracique-monaco.jpg);
   }
 
+  #filters {
+    display: inline-flex;
+    gap: 2rem;
+    margin-top: 2rem;
+
+    DIV {
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+      color: rgba(var(--blueDark), 0.6);
+
+      &:hover {
+        color: rgba(var(--blueDark), 1);
+        cursor: pointer;
+      }
+
+      &.on {
+        color: rgb(var(--red));
+        cursor: default;
+      }
+    }
+  }
+
   #gallery {
     margin-block: 90px;
     text-align: center;

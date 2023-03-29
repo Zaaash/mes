@@ -6,6 +6,8 @@ import brevet from "../../assets/images/fournisseur-brevete-du-prince-monaco.web
 import cardio from "../../assets/images/centre-cardio-thoracique-monaco.webp"
 import engagementEngage from "../../assets/images/engagement-engage.webp"
 import engagementRecrute from "../../assets/images/engagement-recrute.webp"
+import giroflees from "../../assets/images/real-giroflees.webp"
+import hotelParis from "../../assets/images/real-hotelParis.webp"
 import hpC2s from "../../assets/images/c2s-hp.webp"
 import hpI2s from "../../assets/images/i2s-hp.webp"
 import hpMes from "../../assets/images/mes-hp.webp"
@@ -21,6 +23,7 @@ import logoI2s from "../../assets/images/logo-I2S.webp"
 import logoInforca from "../../assets/images/logo-Inforca.webp"
 import logoList from "../../assets/images/logos.webp"
 import logoMes from "../../assets/images/logo-MES.webp"
+import mareterra from "../../assets/images/real-mareterra.webp"
 import mesServices from "../../assets/images/mes-services.webp"
 import offreCompetences from "../../assets/images/offre-competences.webp"
 import offreServices from "../../assets/images/offre-services.webp"
@@ -42,6 +45,10 @@ import r6 from "../../assets/images/r6.webp"
 import r7 from "../../assets/images/r7.webp"
 import r8 from "../../assets/images/r8.webp"
 import r9 from "../../assets/images/r9.webp"
+import sbm from "../../assets/images/real-sbm.webp"
+import scorpio from "../../assets/images/real-scorpio.webp"
+import stade from "../../assets/images/real-stade.webp"
+import yachtClub from "../../assets/images/real-yachtClub.webp"
 
 export {
   actu1,
@@ -88,4 +95,11 @@ export {
   r10,
   r11,
   r12,
+  giroflees,
+  hotelParis,
+  mareterra,
+  sbm,
+  scorpio,
+  stade,
+  yachtClub,
 }

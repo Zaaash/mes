@@ -103,7 +103,7 @@ const txts: any = {
         },
         {
           visual: imgs.r5,
-          title: "Forum Grimaldi",
+          title: "Grimaldi Forum",
           txt: "Loorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacinia enim vel blandit. In placerat, ex nec sodales elementum.",
         },
         {
