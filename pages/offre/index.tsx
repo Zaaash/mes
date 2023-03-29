@@ -122,21 +122,21 @@ const Offre: NextPage = () => {
                 <div className="containerMin">
                   <div className={styles.txt}>
                     <h2>{item.title}</h2>
-                    {item.txt.map((parag: any) => {
-                      return <p key={parag.id}>{parag}</p>
+                    {item.txt.map((parag: any, key: number) => {
+                      return <p key={key}>{parag}</p>
                     })}
 
                     {item.specs &&
-                      item.specs.map((spec: any) => {
+                      item.specs.map((spec: any, key: number) => {
                         return (
                           <div
-                            key={spec.id}
+                            key={key}
                             className={styles.spec}
                           >
                             <h3>{spec.title}</h3>
                             <ul>
-                              {spec.items.map((item: any) => {
-                                return <li key={item.id}>{item}</li>
+                              {spec.items.map((item: any, key: number) => {
+                                return <li key={key}>{item}</li>
                               })}
                             </ul>
                           </div>

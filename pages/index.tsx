@@ -13,6 +13,7 @@ import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
 import type { NextPage } from "next"
+import Script from "next/script"
 import styles from "./index.module.scss"
 import { useRouter } from "next/router"
 
@@ -154,6 +155,79 @@ const txts: any = {
 }
 
 //////////////////////////////////////////////////////////////////////////////////////
+// SEO META DATA LD+JSON
+//////////////////////////////////////////////////////////////////////////////////////
+const data: any = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      name: "Monaco Electricité System",
+      url: "https://www.mes.mc",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: "https://www.mes.mc/search?term={search_term}",
+        "query-input": "required name=search_term",
+      },
+    },
+    {
+      "@id": "https://www.mes.mc",
+      "@type": "Corporation",
+      name: "Monaco Electricité System",
+      description:
+        "restataire multi techniques, nous vous offrons une palette de compétences : concepteurs, intégrateurs, mainteneurs et opérateurs de solutions complexes à forte valeur ajoutée.",
+      brand: "MESi",
+      url: "https://www.mes.mc",
+      email: "mailto:contact@mes.mc",
+      logo: "https://www.mes.mc/logos.webp",
+      image: "https://www.mes.mc/logos.webp",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Bloc B – Zone F4/6, avenue Prince Albert II",
+        addressLocality: "Monaco",
+        postalCode: "98000",
+        addressCountry: "Monaco",
+      },
+      sameAs: [
+        "https://www.facebook.com/MES",
+        "https://twitter.com/_Mes",
+        "https://www.instagram.com/mes.mc/",
+        "https://www.pinterest.fr/MeS/",
+      ],
+      vatID: "FR 20000070457",
+    },
+    {
+      "@type": "SiteNavigationElement",
+      name: [
+        "Energie",
+        "Réseaux et Télécommunications",
+        "Chauffage et climatisation",
+        "Recrutement",
+        "Réalisations",
+        "Contactez-nous",
+      ],
+      description: [
+        "Nos différents projets témoignent de notre savoir-faire et de notre niveau d’exigence.",
+        "En charge de l’ingénierie nécessaire à l’évolution permanente des nouvelles technologies.",
+        "Conçoit, installe et entretien des installations de chauffage, de climatisation et plomberie.",
+        "............",
+        "Survolez à votre guise toutes les facettes de notre savoir faire et cliquez pour en savoir plus.",
+        "Vous avez une question ou cherchez une prestation en particulier, n'hésitez pas à nous laisser un message.",
+      ],
+      url: [
+        "https://www.mes.mc/groupe/mes",
+        "https://www.mes.mc/groupe/i2s",
+        "https://www.mes.mc/groupe/c2s",
+        "https://www.mes.mc/carrieres",
+        "https://www.mes.mc/realisations",
+        "https://www.mes.mc/contact",
+      ],
+    },
+  ],
+}
+const htmlData = { __html: JSON.stringify(data) }
+
+//////////////////////////////////////////////////////////////////////////////////////
 // Page
 //////////////////////////////////////////////////////////////////////////////////////
 const Home: NextPage = () => {
@@ -292,6 +366,12 @@ const Home: NextPage = () => {
           href="https://mes.mc/humans.txt"
         />
       </Head>
+
+      <Script
+        id="ldJson"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={htmlData}
+      />
 
       {/* Body HTML part
        ***************************************************/}

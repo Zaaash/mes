@@ -9,6 +9,8 @@ import engagementRecrute from "../../assets/images/engagement-recrute.webp"
 import hpC2s from "../../assets/images/c2s-hp.webp"
 import hpI2s from "../../assets/images/i2s-hp.webp"
 import hpMes from "../../assets/images/mes-hp.webp"
+import i2sAbout from "../../assets/images/i2s-about.webp"
+import i2sValues from "../../assets/images/i2s-values.webp"
 import intro from "../../assets/images/Monaco-de-nuit.png"
 import introEngagement from "../../assets/images/intro-engagement.webp"
 import introMES from "../../assets/images/intro-mes.webp"
@@ -21,6 +23,12 @@ import logoList from "../../assets/images/logos.webp"
 import logoMes from "../../assets/images/logo-MES.webp"
 import offreCompetences from "../../assets/images/offre-competences.webp"
 import offreServices from "../../assets/images/offre-services.webp"
+import pictoAcces from "../../assets/images/picto-acces.webp"
+import pictoFirewall from "../../assets/images/picto-firewall.webp"
+import pictoTel from "../../assets/images/picto-telephonie.webp"
+import pictoVideo from "../../assets/images/picto-video.webp"
+import pictoVisio from "../../assets/images/picto-visio.webp"
+import pictoWifi from "../../assets/images/picto-wifi.webp"
 import r10 from "../../assets/images/r10.webp"
 import r11 from "../../assets/images/r11.webp"
 import r12 from "../../assets/images/r12.webp"
@@ -42,6 +50,8 @@ export {
   cardio,
   engagementEngage,
   engagementRecrute,
+  i2sAbout,
+  i2sValues,
   intro,
   introEngagement,
   introMES,
@@ -57,6 +67,12 @@ export {
   logoInforca,
   offreServices,
   offreCompetences,
+  pictoTel,
+  pictoWifi,
+  pictoAcces,
+  pictoVideo,
+  pictoFirewall,
+  pictoVisio,
   r2,
   r3,
   r4,

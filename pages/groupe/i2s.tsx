@@ -25,71 +25,75 @@ const txts: any = {
       title: "I2s : Réseaux et Télécommunications",
       descr: "En charge de l’ingénierie nécessaire à l’évolution permanente des nouvelles technologies.",
     },
-    metiers: [
-      {
-        title: "Architecture réseaux",
-        txt: [
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        ],
-      },
-      {
-        title: "Serveurs téléphoniques IP",
-        txt: [
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        ],
-      },
-      {
-        title: "Téléphonie",
-        txt: [
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        ],
-      },
-      {
-        title: "Traitement flux d'images",
-        txt: [
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        ],
-      },
-      {
-        title: "Wifi / portail captif",
-        txt: [
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        ],
-      },
-      {
-        title: "Centre d'appel",
-        txt: [
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        ],
-      },
-      {
-        title: "Contrôle d'accès / vidéo protection",
-        txt: [
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        ],
-      },
-      {
-        title: "Réseau / firewall",
-        txt: [
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        ],
-      },
-      {
-        title: "IP TV & digital signage",
-        txt: [
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        ],
-      },
-    ],
+    qui: {
+      im: imgs.i2sAbout,
+      title: "I2S en quelques mots",
+      txt: [
+        "I2S, Intégration Service System est spécialisé dans les métiers des réseaux et télécommunications d’entreprise.",
+        "I2S maitrise les enjeux des technologies de l’Information et des communications : infrastructures télécoms, réseaux d’entreprise, cloud, data analytics, cybersécurité, contrôle d’accès et vidéoprotection, IP/TV.",
+        "Les experts d’I2S répondent aux problématiques d’infrastructures de télécommunications et de transformation digitale, dans un environnement sécurisé.",
+        "I2S a su conduire avec les leaders du marché des partenariats, afin de fournir des solutions les plus novatrices, performantes et durables.",
+        "De plus, I2S a la capacité de proposer à tous ses clients un service et support spécialisé de proximité.",
+        "Notre ambition est d’aider nos clients à évoluer vers les nouvelles technologies de la transformation digitale.",
+        "D’une manière générale, la démarche professionnelle d’I2S s’inscrit dans l’instauration d’une vraie relation de confiance avec ses clients et partenaires.",
+      ],
+    },
+    metiers: {
+      title: "Domaines d'application",
+      subTitle: "Nombreux et diversifiés ; on pourra notamment citer :",
+      domaines: [
+        {
+          im: imgs.pictoTel,
+          title: "Téléphonie",
+          txt: ["Solution de communication téléphonique unifiées IPBX, cloud, mobile (UCaaS)."],
+        },
+        {
+          im: imgs.pictoWifi,
+          title: "Wifi / Portail Captif",
+          txt: [
+            "Environnement radio haute densité, IOT, sécurisation des accès conforme à la législation, infrastructure hébergée.",
+          ],
+        },
+        {
+          im: imgs.pictoAcces,
+          title: "Contrôle d'accès et vidéoprotection",
+          txt: [
+            "Solution de contrôle d’accès et de vidéoprotection avec respect des spécifications techniques et règles de sécurité recommandées par l’agence nationale de la sécurité des systèmes d’information « ANSSI », (IA, reconnaissance faciale).",
+          ],
+        },
+        {
+          im: imgs.pictoFirewall,
+          title: "Réseau / Firewall",
+          txt: ["L’architecture numérique de réseaux hauts débits sécurisé LAN et WAN, (Virtuel et sécurisé)."],
+        },
+        {
+          im: imgs.pictoVisio,
+          title: "IP TV & Digital Signage",
+          txt: [
+            "Le traitement des flux Multimédia, pour des solutions de type IP/TV, visioconférence et salle de réunion interactive.",
+          ],
+        },
+      ],
+    },
+    values: {
+      im: imgs.i2sValues,
+      title: "Nos valeurs",
+      items: [
+        {
+          name: "Ambition",
+          descr: "Vous aidez à évoluer vers les nouvelles technologies de la transformation digitale.",
+        },
+        {
+          name: "Service",
+          descr: "Un support dédié et une réactivité à l’écoute des clients/partenaires.",
+        },
+        {
+          name: "Féférer",
+          descr:
+            "Un ensemble de solution testé et référencé avec attention pour répondre favorablement aux attentes/enjeux de demain et d’aujourd’hui.",
+        },
+      ],
+    },
   },
 }
 
@@ -141,7 +145,7 @@ const I2s: NextPage = () => {
         id={styles.group}
         className={styles.i2s}
       >
-        {/* Intro / visual */}
+        {/* Visual */}
         <div
           id="visual"
           className={styles.visual}
@@ -154,25 +158,73 @@ const I2s: NextPage = () => {
           </div>
         </div>
 
-        {/* Metiers */}
-        {wording.metiers.map((item: any) => {
-          return (
-            <section
-              key={item.id}
-              id={styles.about}
-              className={"containerMin " + styles.quinconce}
-            >
-              <div className={styles.txt}>
-                <h2>{item.title}</h2>
-                {item.txt.map((parag: any) => {
-                  return <p key={parag.id}>{parag}</p>
-                })}
-              </div>
+        {/* intro */}
+        <section
+          id={styles.about}
+          className={"containerMin " + styles.quinconce}
+        >
+          <div className={styles.txt}>
+            <h2>{wording.qui.title}</h2>
+            {wording.qui.txt.map((parag: any, key: number) => {
+              return <p key={key}>{parag}</p>
+            })}
+          </div>
 
-              <div className={styles.im}></div>
-            </section>
-          )
-        })}
+          <div
+            className={styles.imFx}
+            style={{ backgroundImage: `url(${Object.values(wording.qui.im)[0]})` }}
+          />
+        </section>
+
+        {/* Metiers */}
+        <section id={styles.metiers}>
+          <div className={"containerMax " + styles.content}>
+            <div>
+              <h2>{wording.metiers.title}</h2>
+              <p>{wording.metiers.subTitle}</p>
+            </div>
+
+            {wording.metiers.domaines.map((item: any, key: number) => {
+              return (
+                <div key={key}>
+                  <div className={styles.im}>
+                    <Image
+                      src={item.im}
+                      alt=""
+                    />
+                  </div>
+
+                  <h3>{item.title}</h3>
+                  <p key={key}>{item.txt}</p>
+                </div>
+              )
+            })}
+          </div>
+        </section>
+
+        {/* Values */}
+        <section
+          id={styles.values}
+          className={"containerMin " + styles.quinconce}
+        >
+          <div className={styles.txt}>
+            <h2>{wording.values.title}</h2>
+
+            {wording.values.items.map((value: any, key: number) => {
+              return (
+                <div key={key}>
+                  <h3>{value.name}</h3>
+                  <p>{value.descr}</p>
+                </div>
+              )
+            })}
+          </div>
+
+          <div
+            className={styles.im}
+            style={{ backgroundImage: `url(${Object.values(wording.values.im)[0]})` }}
+          />
+        </section>
       </main>
     </>
   )

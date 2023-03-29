@@ -23,7 +23,7 @@ const txts: any = {
       "Nous vous offrons une palette de compétences : concepteurs, intégrateurs, mainteneurs et opérateurs de solutions complexes à forte valeur ajoutée.",
     intro: {
       title: "C2S : Chauffage et climatisation",
-      descr: "Conçoit, installe et entretien des installations de Chauffage, de Climatisation et Plomberie.",
+      descr: "Conçoit, installe et entretien des installations de chauffage, de climatisation et plomberie.",
     },
     metiers: [
       {
@@ -128,17 +128,16 @@ const C2s: NextPage = () => {
         </div>
 
         {/* Metiers */}
-        {wording.metiers.map((item: any) => {
+        {wording.metiers.map((item: any, key: number) => {
           return (
             <section
-              key={item.id}
-              id={styles.about}
+              key={key}
               className={"containerMin " + styles.quinconce}
             >
               <div className={styles.txt}>
                 <h2>{item.title}</h2>
-                {item.txt.map((parag: any) => {
-                  return <p key={parag.id}>{parag}</p>
+                {item.txt.map((parag: any, key: number) => {
+                  return <p key={key}>{parag}</p>
                 })}
               </div>
 

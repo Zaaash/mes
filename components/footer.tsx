@@ -124,18 +124,18 @@ export default function Footer() {
         </div>
 
         {/* Sitemap */}
-        {wording.sitemap.map((block: any) => {
+        {wording.sitemap.map((block: any, key: number) => {
           return (
             <div
-              key={block.id}
+              key={key}
               className={styles.sitemap}
             >
               <div className={styles.titleBlock}>{block.title}</div>
 
               <ul>
-                {block.links.map((link: any) => {
+                {block.links.map((link: any, key: number) => {
                   return (
-                    <li key={link.id}>
+                    <li key={key}>
                       <Link href={link.url}>
                         <a
                           title=""
@@ -158,9 +158,9 @@ export default function Footer() {
           <div className={styles.titleBlock}>{wording.coords.title}</div>
 
           <ul>
-            {wording.coords.channels.map((coord: any) => {
+            {wording.coords.channels.map((coord: any, key: number) => {
               return (
-                <li key={coord.id}>
+                <li key={key}>
                   <FontAwesomeIcon icon={coord.picto} />
 
                   <div>
@@ -181,9 +181,9 @@ export default function Footer() {
         <div id={styles.footerHours}>
           <div className={styles.titleBlock}>{wording.hours.title}</div>
           <ul>
-            {wording.hours.details.map((hour: any) => {
+            {wording.hours.details.map((hour: any, key: number) => {
               return (
-                <li key={hour.id}>
+                <li key={key}>
                   <span>{hour.day}</span>
                   <span>{hour.open}</span>
                 </li>
@@ -201,10 +201,10 @@ export default function Footer() {
         </div>
 
         <div>
-          {wording.legals.texts.map((item: any) => {
+          {wording.legals.texts.map((item: any, key: number) => {
             return (
               <a
-                key={item.id}
+                key={key}
                 href={item.url}
                 rel="nofollow"
                 target="_self"

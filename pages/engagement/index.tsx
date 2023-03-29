@@ -111,17 +111,17 @@ const Engagement: NextPage = () => {
 
         {/* Engagement */}
         <div>
-          {wording.engagement.map((item: any) => {
+          {wording.engagement.map((item: any, key: number) => {
             return (
               <section
-                key={item.id}
+                key={key}
                 className={styles.quinconce}
               >
                 <div className="containerMin">
                   <div className={styles.txt}>
                     <h2>{item.title}</h2>
-                    {item.txt.map((parag: any) => {
-                      return <p key={parag.id}>{parag}</p>
+                    {item.txt.map((parag: any, key: number) => {
+                      return <p key={key}>{parag}</p>
                     })}
                   </div>
                   <div

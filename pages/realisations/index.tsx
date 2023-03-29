@@ -135,10 +135,10 @@ const Realisations: NextPage = () => {
             id={styles.reals}
             className={"containerMax"}
           >
-            {wording.gallery.reals.map((real: any) => {
+            {wording.gallery.reals.map((real: any, key: number) => {
               return (
                 <div
-                  key={real.id}
+                  key={key}
                   className={styles.real}
                 >
                   <Image

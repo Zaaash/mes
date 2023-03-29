@@ -156,8 +156,8 @@ const Mes: NextPage = () => {
         >
           <div className={styles.txt}>
             <h2>{wording.about.title}</h2>
-            {wording.about.txt.map((parag: any) => {
-              return <p key={parag.id}>{parag}</p>
+            {wording.about.txt.map((parag: any, key: number) => {
+              return <p key={key}>{parag}</p>
             })}
           </div>
 
@@ -172,7 +172,7 @@ const Mes: NextPage = () => {
             <div id={styles.counters}>
               <div>
                 <Counter
-                  target={40}
+                  target={60}
                   duration={5}
                   symbol="M"
                 />
@@ -188,7 +188,7 @@ const Mes: NextPage = () => {
               </div>
               <div>
                 <Counter
-                  target={310}
+                  target={380}
                   duration={5}
                   symbol="+"
                 />
@@ -205,8 +205,8 @@ const Mes: NextPage = () => {
         >
           <div className={styles.txt}>
             <h2>{wording.story.title}</h2>
-            {wording.story.txt.map((parag: any) => {
-              return <p key={parag.id}>{parag}</p>
+            {wording.story.txt.map((parag: any, key: number) => {
+              return <p key={key}>{parag}</p>
             })}
           </div>
 
@@ -267,9 +267,9 @@ const Mes: NextPage = () => {
           <div className={styles.txt}>
             <h2>{wording.values.title}</h2>
 
-            {wording.values.items.map((value: any) => {
+            {wording.values.items.map((value: any, key: number) => {
               return (
-                <div key={value.id}>
+                <div key={key}>
                   <h3>{value.name}</h3>
                   <p>{value.descr}</p>
                 </div>
@@ -278,7 +278,10 @@ const Mes: NextPage = () => {
           </div>
 
           <div>
-            <Image src={imgs.offreServices} />
+            <Image
+              src={imgs.offreServices}
+              alt=""
+            />
           </div>
         </section>
 
