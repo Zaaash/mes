@@ -21,6 +21,7 @@ import logoI2s from "../../assets/images/logo-I2S.webp"
 import logoInforca from "../../assets/images/logo-Inforca.webp"
 import logoList from "../../assets/images/logos.webp"
 import logoMes from "../../assets/images/logo-MES.webp"
+import mesServices from "../../assets/images/mes-services.webp"
 import offreCompetences from "../../assets/images/offre-competences.webp"
 import offreServices from "../../assets/images/offre-services.webp"
 import pictoAcces from "../../assets/images/picto-acces.webp"
@@ -29,6 +30,7 @@ import pictoTel from "../../assets/images/picto-telephonie.webp"
 import pictoVideo from "../../assets/images/picto-video.webp"
 import pictoVisio from "../../assets/images/picto-visio.webp"
 import pictoWifi from "../../assets/images/picto-wifi.webp"
+import posteSecCompt from "../../assets/images/poste-secretaire-comptable.webp"
 import r10 from "../../assets/images/r10.webp"
 import r11 from "../../assets/images/r11.webp"
 import r12 from "../../assets/images/r12.webp"
@@ -65,14 +67,16 @@ export {
   logoC2s,
   logoList,
   logoInforca,
-  offreServices,
+  mesServices,
   offreCompetences,
+  offreServices,
   pictoTel,
   pictoWifi,
   pictoAcces,
   pictoVideo,
   pictoFirewall,
   pictoVisio,
+  posteSecCompt,
   r2,
   r3,
   r4,

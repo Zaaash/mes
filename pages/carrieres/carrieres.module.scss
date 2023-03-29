@@ -1,0 +1,58 @@
+/*********************************************************************************************************************
+  RECRUTEMENT
+*********************************************************************************************************************/
+#carriere {
+  background-color: rgb(var(--greygrey));
+
+  .visual {
+    background-image: url(../../assets/images/intro-carriere.webp);
+    background-position: center -200px;
+  }
+
+  SECTION {
+    @media (max-width: 640px) {
+      padding-block: 80px;
+    }
+
+    @media (min-width: 641px) {
+      padding-block: 150px;
+    }
+
+    .content {
+      display: flex;
+      gap: 3rem;
+
+      @media (max-width: 640px) {
+        flex-direction: column;
+      }
+
+      .im {
+        flex: 1;
+      }
+
+      .txt {
+        flex: 1;
+
+        H2 {
+          &:nth-child(n + 2) {
+            margin-top: 2rem;
+          }
+        }
+
+        P {
+          margin-top: 0.7rem;
+        }
+
+        UL {
+          list-style-type: disc;
+          margin-left: 30px;
+          margin-top: 0.7rem;
+        }
+      }
+    }
+  }
+
+  & + FOOTER {
+    margin-top: 0;
+  }
+}

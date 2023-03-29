@@ -279,7 +279,7 @@ const Mes: NextPage = () => {
 
           <div>
             <Image
-              src={imgs.offreServices}
+              src={imgs.mesServices}
               alt=""
             />
           </div>
