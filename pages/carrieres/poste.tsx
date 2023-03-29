@@ -30,16 +30,16 @@ const txts: any = {
       txt: "Vous recherchez une entreprise en constante progression, avec une grande richesse de métiers et d'activités, des opportunités de carrière a Monaco, alors vous êtes le candidat que nous recherchons ! Pour l'ensemble des Femmes et des Hommes de l’Entreprise MES C2S I2S, des valeurs de travail, d'engagement et de réactivité motivent chaque jour leur engagement.",
     },
     salaire: {
-      title: "Salaire :",
+      title: "Salaire",
       txt: "2000 € Nets Congés Payés + primes incluses",
     },
     type: {
-      title: "Type de contrat :",
+      title: "Type de contrat",
       contrat: "CDD - Temps Plein",
       info: "Remplacement d’un congé Maternité",
     },
     profil: {
-      title: "Profil recherché :",
+      title: "Profil recherché",
       txt: "Nous sommes à la recherche d’une personne, homme ou femme polyvant(e) et dynamique, motivée.",
     },
   },
@@ -135,6 +135,12 @@ const DetailCarriere: NextPage = () => {
                 <li>Suivi des fournisseurs (saisie et envoie des commandes, saisie des factures)</li>
                 <li>Divers administratifs (tenue du standard, ouverture et distribution du courrier)</li>
               </ul>
+
+              <div className={styles.bts}>
+                <button type="button">
+                  <Link href="#">Postuler à cettee offre</Link>
+                </button>
+              </div>
             </div>
           </div>
         </section>
