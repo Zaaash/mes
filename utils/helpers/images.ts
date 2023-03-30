@@ -20,10 +20,15 @@ import introMES from "../../assets/images/intro-mes.webp"
 import introOffre from "../../assets/images/intro-offre.webp"
 import logoC2s from "../../assets/images/logo-C2S.webp"
 import logoCCM from "../../assets/images/logo-CCM.png"
+import logoCHPG from "../../assets/images/logo-CHPG.webp"
+import logoCafeParis from "../../assets/images/logo-cafeParis.webp"
+import logoGrimaldiForum from "../../assets/images/logo-grimaldiForum.webp"
 import logoI2s from "../../assets/images/logo-I2S.webp"
 import logoInforca from "../../assets/images/logo-Inforca.webp"
 import logoList from "../../assets/images/logos.webp"
 import logoMes from "../../assets/images/logo-MES.webp"
+import logoPalaisPrincier from "../../assets/images/logo-palaisPrincier.webp"
+import logoSBM from "../../assets/images/logo-SBM.webp"
 import mareterra from "../../assets/images/real-mareterra.webp"
 import mesServices from "../../assets/images/mes-services.webp"
 import offreCompetences from "../../assets/images/offre-competences.webp"
@@ -79,9 +84,14 @@ export {
   logoMes,
   logoI2s,
   logoCCM,
+  logoCHPG,
+  logoCafeParis,
+  logoGrimaldiForum,
   logoC2s,
   logoList,
   logoInforca,
+  logoPalaisPrincier,
+  logoSBM,
   mesServices,
   offreCompetences,
   offreServices,

@@ -150,7 +150,14 @@ const txts: any = {
     },
     clients: {
       title: "Nos clients",
-      refs: [{ logo: imgs.logoCCM, alt: "Centre Cardio-thoracique de Monaco" }],
+      refs: [
+        { logo: imgs.logoCCM, alt: "Centre Cardio-thoracique de Monaco" },
+        { logo: imgs.logoSBM, alt: "Centre Cardio-thoracique de Monaco" },
+        { logo: imgs.logoPalaisPrincier, alt: "Centre Cardio-thoracique de Monaco" },
+        { logo: imgs.logoGrimaldiForum, alt: "Centre Cardio-thoracique de Monaco" },
+        { logo: imgs.logoCafeParis, alt: "Centre Cardio-thoracique de Monaco" },
+        { logo: imgs.logoCHPG, alt: "Centre Cardio-thoracique de Monaco" },
+      ],
     },
   },
 }

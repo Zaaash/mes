@@ -368,7 +368,9 @@
 
     .refs {
       display: flex;
-      justify-content: center; //space-between;
+      justify-content: space-between;
+      align-items: center;
+      gap: 4rem;
       margin-top: 5rem;
     }
   }
