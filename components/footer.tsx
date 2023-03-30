@@ -161,7 +161,9 @@ export default function Footer() {
             {wording.coords.channels.map((coord: any, key: number) => {
               return (
                 <li key={key}>
-                  <FontAwesomeIcon icon={coord.picto} />
+                  <i>
+                    <FontAwesomeIcon icon={coord.picto} />
+                  </i>
 
                   <div>
                     <a

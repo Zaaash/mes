@@ -40,7 +40,7 @@
         font-size: 20px;
         color: #fff;
 
-        SVG {
+        I {
           width: 1.5rem;
         }
       }
@@ -67,7 +67,8 @@
       margin-bottom: 1rem;
       color: #fff;
 
-      SVG {
+      I {
+        display: flex;
         margin-right: 1rem;
         margin-top: -6px;
         width: 36px;

@@ -137,7 +137,12 @@ const Contact: NextPage = () => {
         >
           <div>
             <div>
-              <FontAwesomeIcon icon={pictosSol.faPhone} />
+              <i>
+                <FontAwesomeIcon
+                  icon={pictosSol.faPhone}
+                  width={"1.5rem"}
+                />
+              </i>
             </div>
             <div>
               <h2>{wording.phones}</h2>
@@ -149,7 +154,12 @@ const Contact: NextPage = () => {
 
           <div>
             <div>
-              <FontAwesomeIcon icon={pictosReg.faEnvelope} />
+              <i>
+                <FontAwesomeIcon
+                  icon={pictosReg.faEnvelope}
+                  width={"1.5rem"}
+                />
+              </i>
             </div>
             <div>
               <h2>{wording.email}</h2>
@@ -159,7 +169,9 @@ const Contact: NextPage = () => {
 
           <div>
             <div>
-              <FontAwesomeIcon icon={pictosReg.faMap} />
+              <i>
+                <FontAwesomeIcon icon={pictosReg.faMap} />
+              </i>
             </div>
             <div>
               <h2>{wording.address}</h2>
@@ -175,7 +187,9 @@ const Contact: NextPage = () => {
         >
           <div>
             <h2>
-              <FontAwesomeIcon icon={pictosReg.faPenToSquare} />
+              <i>
+                <FontAwesomeIcon icon={pictosReg.faPenToSquare} />
+              </i>
               {wording.letMessage}
             </h2>
 
