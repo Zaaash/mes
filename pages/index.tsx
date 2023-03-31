@@ -92,7 +92,7 @@ const txts: any = {
       subTitle: "Découvrez nos dernières réalisations",
       reals: [
         {
-          visual: imgs.cardio,
+          visual: imgs.cardio1,
           title: "Centre cardio-thoracique de Monaco",
           txt: "Loorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacinia enim vel blandit. In placerat, ex nec sodales elementum.",
         },
@@ -107,13 +107,13 @@ const txts: any = {
           txt: "Loorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacinia enim vel blandit. In placerat, ex nec sodales elementum.",
         },
         {
-          visual: imgs.r7,
+          visual: imgs.couvent1,
           title: "Hôtel du couvent (Nice)",
           txt: "Loorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacinia enim vel blandit. In placerat, ex nec sodales elementum.",
         },
         {
-          visual: imgs.cardio,
-          title: "Centre cardio thoracique",
+          visual: imgs.edenRoc1,
+          title: "Hôtel du Cap Eden Roc",
           txt: "Loorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacinia enim vel blandit. In placerat, ex nec sodales elementum.",
         },
       ],

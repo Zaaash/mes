@@ -320,7 +320,7 @@ const Realisations: NextPage = () => {
 
                     <span>{real.descr}</span>
 
-                    <i onClick={() => handleZoom(real.im, real.id)}>
+                    <i onClick={() => handleZoom(real.im[0], real.id)}>
                       <FontAwesomeIcon
                         icon={pictosSol.faPhotoVideo}
                         title="Zoom photo"
@@ -339,16 +339,20 @@ const Realisations: NextPage = () => {
           ref={zoom}
           onClick={() => handleZoom("")}
         >
-          <div className={zoomId}>
-            <Link href={`/realisations/detail?id=${zoomId}`}>
-              <Image
-                src={zoomIm}
-                title="En savoir plus sur cette réalisation..."
-                alt=""
-              />
-            </Link>
+          <div id="maskZoom">
+            <Image
+              src={zoomIm}
+              title="En savoir plus sur cette réalisation..."
+              alt=""
+            />
           </div>
-          <div onClick={handleZoom}>X</div>
+
+          <div
+            id="maskClose"
+            onClick={handleZoom}
+          >
+            X
+          </div>
         </div>
       </main>
     </>
