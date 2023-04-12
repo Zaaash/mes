@@ -39,6 +39,9 @@ import logoSBM from "../../assets/images/logo-SBM.webp"
 import mareterra1 from "../../assets/images/real-mareterra-1.webp"
 import mareterra2 from "../../assets/images/real-mareterra-2.webp"
 import mareterra3 from "../../assets/images/real-mareterra-3.webp"
+import mesCA from "../../assets/images/mes-ca.png"
+import mesMK from "../../assets/images/mes-marches.png"
+import mesOD from "../../assets/images/mes-commandes.png"
 import mesServices from "../../assets/images/mes-services.webp"
 import nchpg1 from "../../assets/images/real-nouveau-centre-hospitalier-Princesse-Grace-1.webp"
 import nchpg2 from "../../assets/images/real-nouveau-centre-hospitalier-Princesse-Grace-2.webp"
@@ -48,11 +51,17 @@ import palais1 from "../../assets/images/real-palais-princier-1.webp"
 import pictoAcces from "../../assets/images/picto-acces.webp"
 import pictoChauffClim from "../../assets/images/picto-chauffClim.webp"
 import pictoConseil from "../../assets/images/picto-conseil.webp"
+import pictoControleAcces from "../../assets/images/picto-controle-acces.webp"
+import pictoDomotique from "../../assets/images/picto-domotique.webp"
+import pictoEclairage from "../../assets/images/picto-eclairage.webp"
 import pictoFirewall from "../../assets/images/picto-firewall.webp"
 import pictoIncendie from "../../assets/images/picto-incendie.webp"
+import pictoInterphonie from "../../assets/images/picto-interphonie.webp"
 import pictoMaintenance from "../../assets/images/picto-maintenance.webp"
+import pictoOnduleurs from "../../assets/images/picto-onduleurs.webp"
 import pictoPerfNrj from "../../assets/images/picto-perfNrj.webp"
 import pictoPlomberie from "../../assets/images/picto-plomberie.webp"
+import pictoResElec from "../../assets/images/picto-reseau-electrique.webp"
 import pictoTel from "../../assets/images/picto-telephonie.webp"
 import pictoVideo from "../../assets/images/picto-video.webp"
 import pictoVisio from "../../assets/images/picto-visio.webp"
@@ -118,6 +127,9 @@ export {
   mareterra2,
   mareterra3,
   mesServices,
+  mesCA,
+  mesOD,
+  mesMK,
   offreCompetences,
   offreServices,
   palais1,
@@ -126,10 +138,16 @@ export {
   pictoAcces,
   pictoChauffClim,
   pictoConseil,
+  pictoControleAcces,
+  pictoDomotique,
+  pictoEclairage,
   pictoIncendie,
+  pictoInterphonie,
   pictoMaintenance,
   pictoPerfNrj,
+  pictoOnduleurs,
   pictoPlomberie,
+  pictoResElec,
   pictoVideo,
   pictoFirewall,
   pictoVisio,

@@ -29,8 +29,10 @@ const txts: any = {
     about: {
       title: "À propos de nous",
       txt: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "Basée sur Monaco, l'entreprise MES est spécialisée dans les installations électriques de pointe et dans tous les autres corps de métier à forte valeur ajoutée. Nous sommes fiers de pouvoir offrir à nos clients un service de qualité supérieure et de répondre à leurs besoins spécifiques.",
+        "Notre équipe de professionnels qualifiés est en mesure de fournir des services complets de construction, de la planification initiale à la réalisation finale. Nous travaillons en étroite collaboration avec nos clients pour comprendre leurs exigences uniques et pour leur fournir des solutions sur mesure pour leurs projets de construction.",
+        "Nous nous engageons à fournir des services de qualité supérieure. Notre entreprise est fière de sa réputation pour la qualité de ses travaux et sa capacité à respecter les délais de livraison. Nous sommes fiers de compter sur la fidélité de nos clients qui ont choisi de nous faire confiance pour leurs projets les plus importants.",
+        "Si vous recherchez une entreprise de construction de bâtiments à Monaco qui est à la pointe de la technologie et qui peut s'adapter à vos besoins spécifiques, n'hésitez pas à nous contacter. Nous serons heureux de répondre à vos questions et de discuter de votre projet avec vous.",
       ],
     },
     story: {
@@ -38,6 +40,44 @@ const txts: any = {
       txt: [
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      ],
+    },
+    metiers: {
+      title: "Domaines d'application",
+      subTitle: "Nombreux et diversifiés ; on pourra notamment citer :",
+      domaines: [
+        {
+          im: imgs.pictoResElec,
+          title: "Énergie et réseaux électriques",
+          txt: [
+            "Du prédimensionnement d’une installation à la réalisation et la mise en service, en passant par l’étude d’exécution, nous réalisons vos installations en moyenne et basse tension.",
+          ],
+        },
+        {
+          im: imgs.pictoOnduleurs,
+          title: "Des bâtiments sécurisés en énergie",
+          txt: ["Groupes électrogènes – Onduleurs - AES."],
+        },
+        {
+          im: imgs.pictoDomotique,
+          title: "Des bâtiments performants et connectés",
+          txt: ["Inf VDI (I2S), GTC, GTB, Smart Grid, Micro Grid, domotique, audio-visuel-multimédia."],
+        },
+        {
+          im: imgs.pictoInterphonie,
+          title: "Sécurité des personnes dans les bâtiments",
+          txt: ["SSI, sonorisation de sécurité, interphonie de sécurité."],
+        },
+        {
+          im: imgs.pictoControleAcces,
+          title: "Sécurisation des sites",
+          txt: ["Sureté, anti-intrusion, vidéosurveillance, contrôle d’accès."],
+        },
+        {
+          im: imgs.pictoEclairage,
+          title: "Transports et mobilité",
+          txt: ["Eclairage urbain dynamique, éclairage des tunnels, contrôle accès des tunnels, bornes IRVE"],
+        },
       ],
     },
     values: {
@@ -75,10 +115,7 @@ const txts: any = {
     },
     keys: {
       title: "Nos chiffres clés",
-      txt: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      ],
+      subTitle: "En détails...",
     },
     seaWergie: {
       title: "Sea Wergie",
@@ -225,6 +262,74 @@ const Mes: NextPage = () => {
             <div>Prise de participation SeaWergie</div>
             <div>2022</div>
             <div>Ouverture du capital au manager et à la SAM Metis Famille Casiraghi</div>
+          </div>
+        </section>
+
+        {/* Diagrams */}
+        <section id={styles.keys}>
+          <div className="containerMin">
+            <h2>{wording.keys.subTitle}</h2>
+
+            <div
+              id={styles.diags}
+              className="containerMax"
+            >
+              <div>
+                <Image
+                  src={imgs.mesCA}
+                  height={650}
+                  objectFit="contain"
+                  alt=""
+                />
+                <span>{"Chiffre d'affaire"}</span>
+              </div>
+              <div>
+                <Image
+                  src={imgs.mesOD}
+                  height={650}
+                  objectFit="contain"
+                  alt=""
+                />
+                <span>Carnet de commandes</span>
+              </div>
+              <div>
+                <Image
+                  src={imgs.mesMK}
+                  height={650}
+                  objectFit="contain"
+                  alt=""
+                />
+                <span>Répartition Public Privé</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Metiers */}
+        <section id={styles.metiers}>
+          <div className={"containerMax " + styles.titles}>
+            <h2>{wording.metiers.title}</h2>
+            <p>{wording.metiers.subTitle}</p>
+          </div>
+
+          <div className={"containerMax " + styles.content}>
+            {wording.metiers.domaines.map((item: any, key: number) => {
+              return (
+                <div key={key}>
+                  <div className={styles.im}>
+                    <Image
+                      src={item.im}
+                      height={110}
+                      objectFit="contain"
+                      alt=""
+                    />
+                  </div>
+
+                  <h3>{item.title}</h3>
+                  <p key={key}>{item.txt}</p>
+                </div>
+              )
+            })}
           </div>
         </section>
 

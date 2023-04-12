@@ -27,7 +27,7 @@ const txts: any = {
     },
     societe: {
       title: "Notre société",
-      txt: "Vous recherchez une entreprise en constante progression, avec une grande richesse de métiers et d'activités, des opportunités de carrière a Monaco, alors vous êtes le candidat que nous recherchons ! Pour l'ensemble des Femmes et des Hommes de l’Entreprise MES C2S I2S, des valeurs de travail, d'engagement et de réactivité motivent chaque jour leur engagement.",
+      txt: "Vous recherchez une entreprise à forte valeur ajoutée, avec un large éventail de métiers et d'activités, mais aussi avec de belles possibilités d'évolution, alors vous êtes le candidat que nous recherchons ! L’ensemble de nos projets, les évolutions techniques permanentes sont autant d’occasions d'apprendre et d'accroître vos compétences. Notre volonté, proposer des opportunités de carrière à l’ensemble des femmes et des hommes dont la valeur travail et l’engagement motivent leur quotidien.",
     },
     salaire: {
       title: "Salaire",
@@ -138,7 +138,7 @@ const DetailCarriere: NextPage = () => {
 
               <div className={styles.bts}>
                 <button type="button">
-                  <Link href="#">Postuler à cettee offre</Link>
+                  <Link href="#">Postuler à cette offre</Link>
                 </button>
               </div>
             </div>

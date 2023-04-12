@@ -30,12 +30,11 @@ const txts: any = {
     intro: {
       title: "Monaco Electricité System",
       descr:
-        "Prestataire multi techniques, nous vous offrons une palette de compétences : concepteurs, intégrateurs, mainteneurs et opérateurs de solutions complexes à forte valeur ajoutée.",
-      slogan: "Nous ne cessons de nous réinventer.",
+        "Partenaire multi service, à forte valeur ajoutée, nous concevons grâce a notre savoir-faire des installations complexes qui s’inscrive dans la volonté de satisfaire l’ensemble de nos clients et partenaires.",
       button: "Découvrir l'entreprise",
     },
     group: {
-      title: "Le groupe",
+      title: "L'entreprise",
       subTitle: "Qui sommes-nous ?",
       entities: [
         {
@@ -394,7 +393,6 @@ const Home: NextPage = () => {
             <div>
               <h1>{wording.intro.title}</h1>
               <p>{wording.intro.descr}</p>
-              <div>{wording.intro.slogan}</div>
               <button type="button">
                 <Link href="/#start">{wording.intro.button}</Link>
               </button>

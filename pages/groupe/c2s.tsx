@@ -28,7 +28,13 @@ const txts: any = {
     qui: {
       im: imgs.c2sAbout,
       title: "C2S en quelques mots",
-      txt: ["Lorem ipsum."],
+      txt: [
+        "Climatisation Service et System (C2S) est spécialisé dans les métiers du génie climatique.",
+        "C2S maitrise l’ensemble des techniques et des technologies dans la production de chaleur et de réfrigération, ces ingénieurs de conception conçoivent et modélisent des installations complexes qui assurent la transition énergétique.",
+        "L’implication de C2S au côté de SeaWergie est le gage de la capacité de nos équipes et de notre engagement à accompagner l’état Monégasque dans sa volonté d’obtenir la neutralité Carbonne en 2050.",
+        "C2S a su conduire avec les leaders du marché des partenariats, afin de fournir des solutions les plus novatrices, performantes et durables pour garantir les enjeux de confort, de qualité et d’efficacité énergétique.",
+        "Le services maintenance de C2S conduit et entretient au quotidien ces installations afin d’en assurer la disponibilité des installations avec un coût global maîtrisé.",
+      ],
     },
     metiers: {
       title: "Domaines d'application",
@@ -174,6 +180,8 @@ const C2s: NextPage = () => {
                   <div className={styles.im}>
                     <Image
                       src={item.im}
+                      height={110}
+                      objectFit="contain"
                       alt=""
                     />
                   </div>

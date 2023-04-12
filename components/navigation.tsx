@@ -18,7 +18,6 @@ const txts: any = {
       { page: "I2S", url: "/groupe/i2s" },
       { page: "C2S", url: "/groupe/c2s" },
       { page: "Offre", url: "/offre" },
-      { page: "Engagement", url: "/engagement" },
       { page: "Réalisations", url: "/realisations" },
       { page: "Carrière", url: "/carrieres" },
       { page: "Contact", url: "/contact" },

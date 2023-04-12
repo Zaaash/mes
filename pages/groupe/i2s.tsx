@@ -190,6 +190,8 @@ const I2s: NextPage = () => {
                   <div className={styles.im}>
                     <Image
                       src={item.im}
+                      height={110}
+                      objectFit="contain"
                       alt=""
                     />
                   </div>

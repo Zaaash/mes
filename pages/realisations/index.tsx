@@ -1,7 +1,7 @@
 import * as imgs from "../../utils/helpers/images"
 import * as pictosSol from "@fortawesome/free-solid-svg-icons"
 
-import { useEffect, useRef, useState } from "react"
+import { SetStateAction, useEffect, useRef, useState } from "react"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Head from "next/head"
@@ -218,10 +218,10 @@ const Realisations: NextPage = () => {
   const router = useRouter()
   const wording = txts[`${router.locale}`]
 
+  const [filt, setFilter] = useState("")
   const [zoomIm, setZoomIm] = useState(imgs.logoMes)
   const [zoomId, setZoomId] = useState("")
 
-  const visual = useRef<any>()
   const zoom = useRef<any>()
 
   // First load
@@ -232,6 +232,11 @@ const Realisations: NextPage = () => {
 
   // Functions
   //---------------------------------------------------------------------------------
+  // Sort by company
+  const sortBy = (e: any, t: string | null = "") => {
+    setFilter(t === "all" ? "" : e.target.innerText.toLocaleLowerCase())
+  }
+
   // Zoom image
   const handleZoom = (p: any = "", id: string = "") => {
     if (p !== "") {
@@ -294,42 +299,49 @@ const Realisations: NextPage = () => {
           <span>{wording.gallery.subTitle}</span>
 
           <div id={styles.filters}>
-            <div className={styles.on}>Tous les projets</div>
-            <div>MES</div>
-            <div>I2S</div>
-            <div>C2S</div>
+            <div
+              className={styles.on}
+              onClick={() => sortBy("all")}
+            >
+              Tous les projets
+            </div>
+            <div onClick={sortBy}>MES</div>
+            <div onClick={sortBy}>I2S</div>
+            <div onClick={sortBy}>C2S</div>
           </div>
 
           <div
             id={styles.reals}
             className={"containerMax"}
           >
-            {wording.gallery.reals.map((real: any, key: number) => {
-              return (
-                <div
-                  key={key}
-                  className={styles.real}
-                >
-                  <Image
-                    src={real.im[0]}
-                    alt=""
-                  />
+            {wording.gallery.reals
+              .filter((real: { ref: string }) => real.ref === filt)
+              .map((real: any, key: number) => {
+                return (
+                  <div
+                    key={key}
+                    className={styles.real}
+                  >
+                    <Image
+                      src={real.im[0]}
+                      alt=""
+                    />
 
-                  <div>
-                    <strong>{real.name}</strong>
+                    <div>
+                      <strong>{real.name}</strong>
 
-                    <span>{real.descr}</span>
+                      <span>{real.descr}</span>
 
-                    <i onClick={() => handleZoom(real.im[0], real.id)}>
-                      <FontAwesomeIcon
-                        icon={pictosSol.faPhotoVideo}
-                        title="Zoom photo"
-                      />
-                    </i>
+                      <i onClick={() => handleZoom(real.im[0], real.id)}>
+                        <FontAwesomeIcon
+                          icon={pictosSol.faPhotoVideo}
+                          title="Zoom photo"
+                        />
+                      </i>
+                    </div>
                   </div>
-                </div>
-              )
-            })}
+                )
+              })}
           </div>
         </section>
 
