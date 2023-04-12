@@ -4,6 +4,7 @@
 #footer {
   margin-top: var(--margins);
   background-color: rgb(var(--blueDark));
+  user-select: none;
 
   @media screen and (max-width: 768px) {
     margin-top: 170px;

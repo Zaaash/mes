@@ -220,7 +220,6 @@ const Realisations: NextPage = () => {
 
   const [filt, setFilter] = useState("")
   const [zoomIm, setZoomIm] = useState(imgs.logoMes)
-  const [zoomId, setZoomId] = useState("")
 
   const zoom = useRef<any>()
 
@@ -233,20 +232,19 @@ const Realisations: NextPage = () => {
   // Functions
   //---------------------------------------------------------------------------------
   // Sort by company
-  const sortBy = (t: string = "") => {
+  const sortBy = (e: any, t: string) => {
     setFilter(t)
+    // e.target.classList.addClass(styles.on)
   }
 
   // Zoom image
-  const handleZoom = (p: any = "", id: string = "") => {
+  const handleZoom = (p: any = "") => {
     if (p !== "") {
       setZoomIm(p)
-      setZoomId(id)
       zoom.current.classList.add("on")
     } else {
       zoom.current.classList.remove("on")
       setZoomIm(imgs.logoMes)
-      setZoomId("")
     }
   }
 
@@ -300,14 +298,33 @@ const Realisations: NextPage = () => {
 
           <div id={styles.filters}>
             <div
-              className={styles.on}
-              onClick={() => setFilter("")}
+              title="Afficher tous les projets réalisés par Engeco"
+              onClick={(e) => sortBy(e, "")}
+              className={filt === "" ? styles.on : ""}
             >
               Tous les projets
             </div>
-            <div onClick={() => sortBy("mes")}>MES</div>
-            <div onClick={() => sortBy("i2s")}>I2S</div>
-            <div onClick={() => sortBy("c2s")}>C2S</div>
+            <div
+              title="Afficher tous les projets réalisés par MES"
+              onClick={(e) => sortBy(e, "mes")}
+              className={filt === "mes" ? styles.on : ""}
+            >
+              MES
+            </div>
+            <div
+              title="Afficher tous les projets réalisés par I2S"
+              onClick={(e) => sortBy(e, "i2s")}
+              className={filt === "i2s" ? styles.on : ""}
+            >
+              I2S
+            </div>
+            <div
+              title="Afficher tous les projets réalisés par C2S"
+              onClick={(e) => sortBy(e, "c2s")}
+              className={filt === "c2s" ? styles.on : ""}
+            >
+              C2S
+            </div>
           </div>
 
           <div
@@ -326,17 +343,14 @@ const Realisations: NextPage = () => {
                       src={real.im[0]}
                       alt=""
                     />
-
                     <div>
                       <strong>{real.name}</strong>
-
                       <span>{real.descr}</span>
-
-                      <i onClick={() => handleZoom(real.im[0], real.id)}>
-                        <FontAwesomeIcon
-                          icon={pictosSol.faPhotoVideo}
-                          title="Zoom photo"
-                        />
+                      <i
+                        onClick={() => handleZoom(real.im[0])}
+                        title="Zoom photo"
+                      >
+                        <FontAwesomeIcon icon={pictosSol.faPhotoVideo} />
                       </i>
                     </div>
                   </div>
