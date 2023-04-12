@@ -233,8 +233,8 @@ const Realisations: NextPage = () => {
   // Functions
   //---------------------------------------------------------------------------------
   // Sort by company
-  const sortBy = (e: any, t: string | null = "") => {
-    setFilter(t === "all" ? "" : e.target.innerText.toLocaleLowerCase())
+  const sortBy = (t: string = "") => {
+    setFilter(t)
   }
 
   // Zoom image
@@ -301,13 +301,13 @@ const Realisations: NextPage = () => {
           <div id={styles.filters}>
             <div
               className={styles.on}
-              onClick={() => sortBy("all")}
+              onClick={() => setFilter("")}
             >
               Tous les projets
             </div>
-            <div onClick={sortBy}>MES</div>
-            <div onClick={sortBy}>I2S</div>
-            <div onClick={sortBy}>C2S</div>
+            <div onClick={() => sortBy("mes")}>MES</div>
+            <div onClick={() => sortBy("i2s")}>I2S</div>
+            <div onClick={() => sortBy("c2s")}>C2S</div>
           </div>
 
           <div
@@ -315,7 +315,7 @@ const Realisations: NextPage = () => {
             className={"containerMax"}
           >
             {wording.gallery.reals
-              .filter((real: { ref: string }) => real.ref === filt)
+              .filter((real: { ref: string }) => real.ref.includes(filt))
               .map((real: any, key: number) => {
                 return (
                   <div
