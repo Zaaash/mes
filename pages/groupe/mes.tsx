@@ -29,10 +29,11 @@ const txts: any = {
     about: {
       title: "À propos de nous",
       txt: [
-        "Basée sur Monaco, l'entreprise MES est spécialisée dans les installations électriques de pointe et dans tous les autres corps de métier à forte valeur ajoutée. Nous sommes fiers de pouvoir offrir à nos clients un service de qualité supérieure et de répondre à leurs besoins spécifiques.",
-        "Notre équipe de professionnels qualifiés est en mesure de fournir des services complets de construction, de la planification initiale à la réalisation finale. Nous travaillons en étroite collaboration avec nos clients pour comprendre leurs exigences uniques et pour leur fournir des solutions sur mesure pour leurs projets de construction.",
-        "Nous nous engageons à fournir des services de qualité supérieure. Notre entreprise est fière de sa réputation pour la qualité de ses travaux et sa capacité à respecter les délais de livraison. Nous sommes fiers de compter sur la fidélité de nos clients qui ont choisi de nous faire confiance pour leurs projets les plus importants.",
-        "Si vous recherchez une entreprise de construction de bâtiments à Monaco qui est à la pointe de la technologie et qui peut s'adapter à vos besoins spécifiques, n'hésitez pas à nous contacter. Nous serons heureux de répondre à vos questions et de discuter de votre projet avec vous.",
+        "Basée sur Monaco, l'entreprise MES conçoit, installe et fournit des solutions sur mesure et des services complets de construction, de la planification initiale à la réalisation finale.",
+        "Nous travaillons en étroite collaboration avec nos clients pour améliorer les équipements, les systèmes et les processus techniques et optimiser leur utilisation dans le contexte de leurs projets de construction et de leur transition énergétique, industrielle et numérique.",
+        "Grâce à une forte empreinte territoriale liée à ses marques locales, et un excellent savoir-faire technique, les experts hautement qualifiés de MES sont en mesure de vous accompagner dans les domaines de l’Electricité Courants Forts et Courants Faibles, du Numérique, de la Maintenance et du maintien en exploitation.",
+        "Nous sommes fiers de compter sur la fidélité de nos clients qui ont choisi de nous faire confiance pour la réalisation de leurs projets les plus importants.",
+        "Nous avons à cœur d’embellir les lieux publics et privés pour les rendre prestigieux, conviviaux et faciliter l’accès à une meilleure qualité de vie, et nous serons heureux de répondre à vos questions et d’échanger sur la réalisation de vos futurs projets avec vous",
       ],
     },
     story: {

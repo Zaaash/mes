@@ -23,7 +23,7 @@ const txts: any = {
       "Nous vous offrons une palette de compétences : concepteurs, intégrateurs, mainteneurs et opérateurs de solutions complexes à forte valeur ajoutée.",
     intro: {
       title: "I2s : Réseaux et Télécommunications",
-      descr: "En charge de l’ingénierie nécessaire à l’évolution permanente des nouvelles technologies.",
+      descr: "En charge de l’ingénierie nécessaire à l’évolution permanente des nouvelles technologies du numérique.",
     },
     qui: {
       im: imgs.i2sAbout,
@@ -88,9 +88,9 @@ const txts: any = {
           descr: "Un support dédié et une réactivité à l’écoute des clients/partenaires.",
         },
         {
-          name: "Fédérer",
+          name: "Adaptation",
           descr:
-            "Un ensemble de solution testé et référencé avec attention pour répondre favorablement aux attentes/enjeux de demain et d’aujourd’hui.",
+            "Savoir intégrer un ensemble de solutions testées et référencées avec rigueur et attention pour pouvoir répondre favorablement aux attentes et aux enjeux d’aujourd’hui et de demain.",
         },
       ],
     },
