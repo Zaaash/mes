@@ -19,9 +19,9 @@ const txts: any = {
       { page: "C2S", url: "/groupe/c2s" },
       { page: "Offre", url: "/offre" },
       { page: "Réalisations", url: "/realisations" },
-      { page: "Carrière", url: "/carrieres" },
+      { page: "Carrière", url: "/carrieres/poste" },
       { page: "Contact", url: "/contact" },
-      { picto: pictosSol.faSearch, url: "" },
+      // { picto: pictosSol.faSearch, url: "" },
     ],
   },
 }

@@ -238,7 +238,7 @@
             position: absolute;
             z-index: 2;
             left: 0;
-            bottom: -170px;
+            bottom: -250px;
             width: 100%;
             padding: 1.5rem;
             transition: all 0.4s;
@@ -319,7 +319,7 @@
 
         .actu {
           flex: 1;
-          border: 1px solid #eee;
+          border: 1px solid #ddd;
           padding: 0 1rem 3rem;
           text-align: left;
 
@@ -372,6 +372,7 @@
       align-items: center;
       gap: 4rem;
       margin-top: 5rem;
+      user-select: none;
     }
   }
 }

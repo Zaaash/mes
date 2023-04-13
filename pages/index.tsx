@@ -93,27 +93,27 @@ const txts: any = {
         {
           visual: imgs.cardio1,
           title: "Centre cardio-thoracique de Monaco",
-          txt: "Loorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacinia enim vel blandit. In placerat, ex nec sodales elementum.",
+          txt: "Solution de télécommunications unifiées.",
         },
         {
           visual: imgs.r4,
           title: "Centre hospitalier Princesse Grâce",
-          txt: "Loorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacinia enim vel blandit. In placerat, ex nec sodales elementum.",
+          txt: "Contrôle d’accès et vidéoprotection en architecture ANSSI.",
         },
         {
           visual: imgs.r5,
           title: "Grimaldi Forum",
-          txt: "Loorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacinia enim vel blandit. In placerat, ex nec sodales elementum.",
+          txt: "Contrôle d’accès et vidéoprotection en architecture ANSSI.",
         },
         {
           visual: imgs.couvent1,
           title: "Hôtel du couvent (Nice)",
-          txt: "Loorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacinia enim vel blandit. In placerat, ex nec sodales elementum.",
+          txt: "Solution de Communications Unifiées. Infrastructure Wifi haute densité. Lan Haut Débit / Firewall. Contrôle d’accès, vidéoprotection.",
         },
         {
           visual: imgs.edenRoc1,
           title: "Hôtel du Cap Eden Roc",
-          txt: "Loorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacinia enim vel blandit. In placerat, ex nec sodales elementum.",
+          txt: "Solution de Communications Unifiées Multisites. Infrastructure Wifi haute densité. Lan Haut Débit. IP/TV. Contrôle d’accès, vidéoprotection.",
         },
       ],
       button: "En savoir plus",
@@ -126,22 +126,22 @@ const txts: any = {
         {
           visual: imgs.actu1,
           title: "Agrandissement du Forum Grimaldi",
-          txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacinia enim vel blandit. In placerat, ex nec sodales elementum.",
+          txt: "",
         },
         {
           visual: imgs.actu2,
           title: "Eclairage extérieur Mareterra",
-          txt: "Loorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacinia enim vel blandit. In placerat, ex nec sodales elementum.",
+          txt: "",
         },
         {
           visual: imgs.actu3,
           title: "Data center - extension du DC3",
-          txt: "Loorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacinia enim vel blandit. In placerat, ex nec sodales elementum.",
+          txt: "",
         },
         {
           visual: imgs.actu4,
           title: "Extension de puissance de la centrale de Fontvieille",
-          txt: "Loorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacinia enim vel blandit. In placerat, ex nec sodales elementum.",
+          txt: "",
         },
       ],
       button: "En savoir plus",
@@ -151,11 +151,11 @@ const txts: any = {
       title: "Nos clients",
       refs: [
         { logo: imgs.logoCCM, alt: "Centre Cardio-thoracique de Monaco" },
-        { logo: imgs.logoSBM, alt: "Centre Cardio-thoracique de Monaco" },
-        { logo: imgs.logoPalaisPrincier, alt: "Centre Cardio-thoracique de Monaco" },
-        { logo: imgs.logoGrimaldiForum, alt: "Centre Cardio-thoracique de Monaco" },
-        { logo: imgs.logoCafeParis, alt: "Centre Cardio-thoracique de Monaco" },
-        { logo: imgs.logoCHPG, alt: "Centre Cardio-thoracique de Monaco" },
+        { logo: imgs.logoSBM, alt: "Société des Bains de Mer" },
+        { logo: imgs.logoPalaisPrincier, alt: "Le Palais Princier" },
+        { logo: imgs.logoGrimaldiForum, alt: "Grimaldi Forum" },
+        { logo: imgs.logoCafeParis, alt: "Café de Paris" },
+        { logo: imgs.logoCHPG, alt: "Centre Hospitalier Princesse Grâce" },
       ],
     },
   },
@@ -557,9 +557,9 @@ const Home: NextPage = () => {
               })}
             </div>
 
-            <button type="button">
+            {/* <button type="button">
               <Link href="/actualites">{wording.news.all}</Link>
-            </button>
+            </button> */}
           </div>
         </section>
 
