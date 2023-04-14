@@ -34,9 +34,9 @@ const txts: any = {
           "Nous maîtrisons notre métier, nous sommes au service de nos clients et tissons des partenariats solides.",
           "Notre indépendance, nos ingénieurs, nos équipes de maitrise et notre organisation sont la force de notre entreprise, la simplicité dans l’action.",
           "Notre volonté, offrir depuis toujours le meilleur du savoir faire au service de l’ensemble de nos clients et partenaires.",
-          "Fort de ces 400 clients, MES C2S et I2S contribuent au quotidien à la réussite de l’ensemble des projets.",
+          "Fort de ses 400 clients, MES C2S et I2S contribuent au quotidien à la réussite de l’ensemble des projets.",
           "MES C2S et I2S considèrent que l’entreprise est un lieu de création de valeur et de développement de l’ensemble de ses collaborateurs, un seul objectif, la satisfaction du client.",
-          "Avec ces 17 ans d’expérience, l’entreprise MES est au cœur de la transformation énergétique et de la révolution numérique.",
+          "Avec ses 17 ans d’expérience, l’entreprise MES est au cœur de la transformation énergétique et de la révolution numérique.",
         ],
       },
       {
