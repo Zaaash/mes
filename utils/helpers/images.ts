@@ -58,6 +58,7 @@ import pictoFirewall from "../../assets/images/picto-firewall.webp"
 import pictoIncendie from "../../assets/images/picto-incendie.webp"
 import pictoInterphonie from "../../assets/images/picto-interphonie.webp"
 import pictoMaintenance from "../../assets/images/picto-maintenance.webp"
+import pictoNetco from "../../assets/images/picto-netco.webp"
 import pictoOnduleurs from "../../assets/images/picto-onduleurs.webp"
 import pictoPerfNrj from "../../assets/images/picto-perfNrj.webp"
 import pictoPlomberie from "../../assets/images/picto-plomberie.webp"
@@ -145,6 +146,7 @@ export {
   pictoInterphonie,
   pictoMaintenance,
   pictoPerfNrj,
+  pictoNetco,
   pictoOnduleurs,
   pictoPlomberie,
   pictoResElec,

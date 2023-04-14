@@ -247,9 +247,6 @@ const Mes: NextPage = () => {
         >
           <div>
             <h2>{wording.story.title}</h2>
-            {/* {wording.story.txt.map((parag: any, key: number) => {
-              return <p key={key}>{parag}</p>
-            })} */}
 
             <div className={styles.timeline}>
               <div>2005</div>
@@ -263,18 +260,6 @@ const Mes: NextPage = () => {
               <div>Prise de participation SeaWergie</div>
               <div>Ouverture du capital au manager et à la SAM Metis Famille Casiraghi</div>
             </div>
-            {/* <div className={styles.timeline}>
-              <div>2005</div>
-              <div>Création de MES à Monaco</div>
-              <div>2006</div>
-              <div>Intégration des activités de I2S</div>
-              <div>2011</div>
-              <div>Intégration des activités de C2S</div>
-              <div>2020</div>
-              <div>Prise de participation SeaWergie</div>
-              <div>2022</div>
-              <div>Ouverture du capital au manager et à la SAM Metis Famille Casiraghi</div>
-            </div> */}
           </div>
         </section>
 

@@ -48,10 +48,20 @@ const txts: any = {
           txt: ["Solution de communication téléphonique unifiées IPBX, cloud, mobile (UCaaS)."],
         },
         {
+          im: imgs.pictoFirewall,
+          title: "Réseau / Firewall",
+          txt: ["L’architecture numérique de réseaux hauts débits sécurisé LAN et WAN, (Virtuel et sécurisé)."],
+        },
+        {
           im: imgs.pictoWifi,
           title: "Wifi / Portail Captif",
+          txt: ["Environnement radio haute densité, IOT, sécurisation des accès conforme à la législation."],
+        },
+        {
+          im: imgs.pictoNetco,
+          title: "NetCo",
           txt: [
-            "Environnement radio haute densité, IOT, sécurisation des accès conforme à la législation, infrastructure hébergée.",
+            "Solution hébergée d’infogérance en communications unifiées, Wifi at the service, portail collaboratif.",
           ],
         },
         {
@@ -60,11 +70,6 @@ const txts: any = {
           txt: [
             "Solution de contrôle d’accès et de vidéoprotection avec respect des spécifications techniques et règles de sécurité recommandées par l’agence nationale de la sécurité des systèmes d’information « ANSSI », (IA, reconnaissance faciale).",
           ],
-        },
-        {
-          im: imgs.pictoFirewall,
-          title: "Réseau / Firewall",
-          txt: ["L’architecture numérique de réseaux hauts débits sécurisé LAN et WAN, (Virtuel et sécurisé)."],
         },
         {
           im: imgs.pictoVisio,
@@ -178,12 +183,12 @@ const I2s: NextPage = () => {
 
         {/* Metiers */}
         <section id={styles.metiers}>
-          <div className={"containerMax " + styles.content}>
-            <div>
-              <h2>{wording.metiers.title}</h2>
-              <p>{wording.metiers.subTitle}</p>
-            </div>
+          <div className={"containerMax " + styles.titles}>
+            <h2>{wording.metiers.title}</h2>
+            <p>{wording.metiers.subTitle}</p>
+          </div>
 
+          <div className={"containerMax " + styles.content}>
             {wording.metiers.domaines.map((item: any, key: number) => {
               return (
                 <div key={key}>
