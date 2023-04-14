@@ -30,7 +30,7 @@ const txts: any = {
     intro: {
       title: "Monaco Electricité System",
       descr:
-        "Partenaire multi services, à forte valeur ajoutée, nous concevons grâce à notre savoir-faire des installations complexes qui s’inscrivent dans la volonté de satisfaire l’ensemble de nos clients et partenaires.",
+        "Partenaire multi services à forte valeur ajoutée, nous concevons grâce à notre savoir-faire des installations complexes qui s’inscrivent dans la volonté de satisfaire l’ensemble de nos clients et partenaires.",
       button: "Découvrir l'entreprise",
     },
     group: {
