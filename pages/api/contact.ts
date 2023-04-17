@@ -29,9 +29,8 @@ export default function sendMessage(req: any, resp: any) {
   sgMail.setApiKey(process.env.SENDGRID_KEY ? process.env.SENDGRID_KEY : "")
 
   const sendGridMail = {
-    from: "no-reply@vinzen.fr",
-    to: "vincent@vinzen.fr",
-    cc: "coach@vincentburgers.com",
+    from: "no-reply@mes.mc",
+    to: "contact@mes.mc",
     templateId: "d-aa8bb86f146c475fb9d13e2e497885f4",
     dynamic_template_data: {
       email: email,

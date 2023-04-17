@@ -108,6 +108,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        SPAN:last-child {
+          margin-left: 4rem;
+        }
       }
     }
   }

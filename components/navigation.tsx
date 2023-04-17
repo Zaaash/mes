@@ -51,7 +51,12 @@ export default function Navigation() {
               <FontAwesomeIcon icon={item.picto} />
             </li>
           ) : router.asPath === item.url ? (
-            <li key={key}>{item.page}</li>
+            <li
+              key={key}
+              className={styles.on}
+            >
+              {item.page}
+            </li>
           ) : (
             <li key={key}>
               <Link href={item.url}>{item.page}</Link>

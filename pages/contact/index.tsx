@@ -163,7 +163,7 @@ const Contact: NextPage = () => {
             </div>
             <div>
               <h2>{wording.email}</h2>
-              <a href="mailto:contact@saniplas.com">{process.env.PUBLIC_EMAIL_CONTACT}</a>
+              <a href={"mailto:" + process.env.PUBLIC_EMAIL_CONTACT}>{process.env.PUBLIC_EMAIL_CONTACT}</a>
             </div>
           </div>
 

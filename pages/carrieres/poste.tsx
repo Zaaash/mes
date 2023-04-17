@@ -138,7 +138,7 @@ const DetailCarriere: NextPage = () => {
 
               <div className={styles.bts}>
                 <button type="button">
-                  <Link href="#">Postuler à cette offre</Link>
+                  <Link href="mailto:contact@mes.mc">Postuler à cette offre</Link>
                 </button>
               </div>
             </div>

@@ -22,7 +22,7 @@
   #menu {
     display: flex;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
     color: inherit;
@@ -50,6 +50,12 @@
 
     @media screen and (min-width: 1536px) {
       gap: 3rem;
+    }
+
+    LI.on {
+      &::first-letter {
+        color: red;
+      }
     }
 
     LI:not(:last-child) {
