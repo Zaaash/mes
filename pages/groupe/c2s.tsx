@@ -23,7 +23,7 @@ const txts: any = {
       "Nous vous offrons une palette de compétences : concepteurs, intégrateurs, mainteneurs et opérateurs de solutions complexes à forte valeur ajoutée.",
     intro: {
       title: "C2S : Chauffage et climatisation",
-      descr: "Conçoit, installe et entretien des installations de chauffage, de climatisation et plomberie.",
+      descr: "Conçoit, installe et entretient des installations de chauffage, de climatisation et plomberie.",
     },
     qui: {
       im: imgs.c2sAbout,
@@ -33,7 +33,7 @@ const txts: any = {
         "C2S maitrise l’ensemble des techniques et des technologies dans la production de chaleur et de réfrigération, ces ingénieurs de conception conçoivent et modélisent des installations complexes qui assurent la transition énergétique.",
         "L’implication de C2S au côté de SeaWergie est le gage de la capacité de nos équipes et de notre engagement à accompagner l’état Monégasque dans sa volonté d’obtenir la neutralité Carbonne en 2050.",
         "C2S a su conduire avec les leaders du marché des partenariats, afin de fournir des solutions les plus novatrices, performantes et durables pour garantir les enjeux de confort, de qualité et d’efficacité énergétique.",
-        "Le services maintenance de C2S conduit et entretient au quotidien ces installations afin d’en assurer la disponibilité des installations avec un coût global maîtrisé.",
+        "Le service maintenance de C2S conduit et entretient au quotidien ces installations afin d’en assurer la disponibilité des installations avec un coût global maîtrisé.",
       ],
     },
     metiers: {

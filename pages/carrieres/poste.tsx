@@ -123,17 +123,16 @@ const DetailCarriere: NextPage = () => {
               <h2>{wording.type.title}</h2>
               <p>{wording.type.contrat}</p>
               <h2>{wording.profil.title}</h2>
-              <p>{wording.profil.txt}</p>
               <p>
-                Dans le cadre d’un remplacement de avril à fin août 2023 (suite à un congé maternité), nous sommes à la
-                recherche d’un poste de secrétaire comptable (homme ou femme) à temps plein.
+                Dans le cadre d’un remplacement maternité d’avril à fin août 2023, nous sommes à la recherche d’une
+                personne, homme ou femme, polyvalente, dynamique et motivée au poste de secrétaire comptable à temps
+                plein.
               </p>
-              <p>Vous devrez être polyvant, dynamique, motivé.</p>
-              <p>Vous serez en coopération avec 3 personnes et serez en charge de :</p>
+              <p>Vous travaillerez avec 3 collaboratrices et serez en charge de :</p>
               <ul>
                 <li>Suivi des clients (saisie des devis, commandes, établissement des factures)</li>
                 <li>Suivi des fournisseurs (saisie et envoie des commandes, saisie des factures)</li>
-                <li>Divers administratifs (tenue du standard, ouverture et distribution du courrier)</li>
+                <li>Divers administratif (tenue du standard, ouverture et distribution du courrier)</li>
               </ul>
 
               <div className={styles.bts}>

@@ -33,7 +33,7 @@ const txts: any = {
         txt: [
           "Nous maîtrisons notre métier, nous sommes au service de nos clients et tissons des partenariats solides.",
           "Notre indépendance, nos ingénieurs, nos équipes de maitrise et notre organisation sont la force de notre entreprise, la simplicité dans l’action.",
-          "Notre volonté, offrir depuis toujours le meilleur du savoir faire au service de l’ensemble de nos clients et partenaires.",
+          "Notre volonté, offrir depuis toujours le meilleur du savoir-faire au service de l’ensemble de nos clients et partenaires.",
           "Fort de ses 400 clients, MES C2S et I2S contribuent au quotidien à la réussite de l’ensemble des projets.",
           "MES C2S et I2S considèrent que l’entreprise est un lieu de création de valeur et de développement de l’ensemble de ses collaborateurs, un seul objectif, la satisfaction du client.",
           "Avec ses 17 ans d’expérience, l’entreprise MES est au cœur de la transformation énergétique et de la révolution numérique.",
@@ -56,9 +56,9 @@ const txts: any = {
         title: "Engagement",
         txt: [
           "Jour après jour, nous concilions réussite économique et respect de l’humain et de l’environnement.",
-          "L’empreinte carbone d’Entreprise MES est faible. Ne produisant pas sur site propre et n’engageant aucune énergie au-delà de ses bureaux ou de ses moyens logistiques, l’Entreprise MES s’inscrit dans un cycle écologique vertueux. Monaco Electricité Système est un acteur important de développement durable, tant dans ses actions propres, pour réduire son empreinte climatique, que pour ses clients et partenaires, dans son rôle de conseil et de prescripteur.",
+          "L’empreinte carbone de l’entreprise MES est faible. Ne produisant pas sur site propre et n’engageant aucune énergie au-delà de ses bureaux ou de ses moyens logistiques, l’Entreprise MES s’inscrit dans un cycle écologique vertueux. Monaco Electricité System est un acteur important de développement durable, tant dans ses actions propres, pour réduire son empreinte climatique, que pour ses clients et partenaires, dans son rôle de conseil et de prescripteur.",
           "Résolument engagé dans une politique de développement durable, MES déploie des solutions globales, respectueuses de l’environnement, capables d’optimiser les dépenses énergétiques de ses clients via des dispositifs écoresponsables.",
-          "Son engagement se retrouve dans les choix stratégiques de ses investissements en 2020 : la totalité de la flotte de véhicules thermiques a alors été remplacée par des véhicules a propulsion électrique.",
+          "Son engagement se retrouve dans les choix stratégiques de ses investissements en 2020 : la totalité de la flotte de véhicules thermiques a alors été remplacée par des véhicules à propulsion électrique.",
           "Notre démarche environnementale, nos projets innovants, notre implication dans les énergies renouvelables, sont des actions qui participent à la construction de la transition énergétique.",
         ],
       },

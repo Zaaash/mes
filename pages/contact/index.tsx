@@ -227,7 +227,7 @@ const Contact: NextPage = () => {
 
         {/* Google Map */}
         <iframe
-          src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d360.38585430053337!2d7.416026041093563!3d43.72952294501648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc2ed2bac67df%3A0xbef756e865a4b9d2!2sAv.%20Albert%20II%2C%2098000%20Monaco!5e0!3m2!1sfr!2sfr!4v1679856778098!5m2!1sfr!2sfr`}
+          src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.1145700221673!2d7.413113812928064!3d43.72894674740626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc2ecdadd0ef7%3A0x1a85ab6b95d90f9c!2s4-6%20Av.%20Albert%20II%2C%2098000%20Monaco!5e0!3m2!1sfr!2sfr!4v1681834654687!5m2!1sfr!2sfr`}
           width="100%"
           height="650"
           loading="lazy"

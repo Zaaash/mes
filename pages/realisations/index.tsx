@@ -28,7 +28,7 @@ const txts: any = {
     },
     gallery: {
       title: "Galerie photos",
-      subTitle: "Survolez à votre guise toutes les facettes de notre savoir faire et cliquez pour en savoir plus...",
+      subTitle: "Survolez à votre guise toutes les facettes de notre savoir-faire et cliquez pour en savoir plus...",
       reals: [
         {
           id: "scorpio-m",

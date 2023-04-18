@@ -42,8 +42,8 @@ const txts: any = {
           logo: imgs.logoMes,
           title: "Energie",
           txt: [
-            "MES est l’origine de notre entreprise, elle regroupe les métiers historiques de l'Energie, de la distribution, de l’éclairage et des énergies renouvelables.",
-            "La maintenance Tertiaire et la conduite de nos installations.",
+            "MES est l’origine de notre entreprise, elle regroupe les métiers historiques de l'énergie, de la distribution, de l’éclairage et des énergies renouvelables.",
+            "La maintenance tertiaire et la conduite de nos installations.",
           ],
           url: "/groupe/mes",
           color: styles.red,
@@ -53,7 +53,7 @@ const txts: any = {
           logo: imgs.logoI2s,
           title: "Réseaux et télécommunications",
           txt: [
-            "I2S est une marque de MES et prend en charge l’ingénierie nécessaire a l’évolution permanente des nouvelles technologies.",
+            "I2S est une marque de MES et prend en charge l’ingénierie nécessaire à l’évolution permanente des nouvelles technologies.",
             "Nos ingénieurs métiers conçoivent et définissent les solutions des infrastructures numériques et de sécurité.",
           ],
           url: "/groupe/i2s",
@@ -64,8 +64,8 @@ const txts: any = {
           logo: imgs.logoC2s,
           title: "Chauffage et climatisation",
           txt: [
-            "C2S est une marque de MES et conçoit installe et entretien des installations de chauffage, de climatisation et plomberie.",
-            "Son savoir faire dans le domaine des énergies renouvelables détermine son engagement dans la transition énergétique.",
+            "C2S est une marque de MES et conçoit installe et entretient des installations de chauffage, de climatisation et plomberie.",
+            "Son savoir-faire dans le domaine des énergies renouvelables détermine son engagement dans la transition énergétique.",
           ],
           url: "/groupe/c2s",
           color: styles.green,
@@ -81,7 +81,7 @@ const txts: any = {
       title: "Une entreprise au cœur des mutations technologiques",
       txt: [
         "Avec I2S et C2S, MES s’engage résolument dans la révolution du numérique.",
-        "Toujours en quête de l’excellence technique, nous sommes un acteur du numérique et de l’efficacité énergétique. Engagé dans un processus de développement durable, nous sommes conscient des enjeux environnementaux.",
+        "Toujours en quête de l’excellence technique, nous sommes un acteur du numérique et de l’efficacité énergétique. Engagé dans un processus de développement durable, nous sommes conscients des enjeux environnementaux.",
         "Notre entreprise a toujours cultivé le sens de la responsabilité et de l’entreprenariat. A taille humaine, agile, notre vision : indépendance, pérennité, proximité et vision.",
         "Enfin, nous sommes fournisseurs brevetés de S.A.S Le Prince de Monaco.",
       ],

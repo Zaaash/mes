@@ -33,7 +33,7 @@ const txts: any = {
         "Nous travaillons en étroite collaboration avec nos clients pour améliorer les équipements, les systèmes et les processus techniques et optimiser leur utilisation dans le contexte de leurs projets de construction et de leur transition énergétique, industrielle et numérique.",
         "Grâce à une forte empreinte territoriale liée à ses marques locales, et un excellent savoir-faire technique, les experts hautement qualifiés de MES sont en mesure de vous accompagner dans les domaines de l’Electricité Courants Forts et Courants Faibles, du Numérique, de la Maintenance et du maintien en exploitation.",
         "Nous sommes fiers de compter sur la fidélité de nos clients qui ont choisi de nous faire confiance pour la réalisation de leurs projets les plus importants.",
-        "Nous avons à cœur d’embellir les lieux publics et privés pour les rendre prestigieux, conviviaux et faciliter l’accès à une meilleure qualité de vie, et nous serons heureux de répondre à vos questions et d’échanger sur la réalisation de vos futurs projets avec vous",
+        "Nous avons à cœur d’embellir les lieux publics et privés pour les rendre prestigieux, conviviaux et faciliter l’accès à une meilleure qualité de vie, et nous serons heureux de répondre à vos questions et d’échanger sur la réalisation de vos futurs projets.",
       ],
     },
     story: {
@@ -62,22 +62,30 @@ const txts: any = {
         {
           im: imgs.pictoDomotique,
           title: "Des bâtiments performants et connectés",
-          txt: ["Inf VDI (I2S), GTC, GTB, Smart Grid, Micro Grid, domotique, audio-visuel-multimédia."],
+          txt: [
+            "Nous menons à bien les projets d’optimisation de la performance Energétique, d’amélioration de la maintenance ou de la qualité de vie au travail en mettant en œuvre des solutions de GTC, GTB, Smart Grid, Micro Grid, Domotique. Nous intégrons suivant vos projets les solutions associées aux installations audiovisuel et multimédia.",
+          ],
         },
         {
           im: imgs.pictoInterphonie,
           title: "Sécurité des personnes dans les bâtiments",
-          txt: ["SSI, sonorisation de sécurité, interphonie de sécurité."],
+          txt: [
+            "Nos équipes réalisent dans les secteurs d’activités industriel, tertiaire et résidentiel la mise œuvre des installations de sécurité des biens et des personnes : SSI (Système de Sécurité Incendie, Sonorisation de Sécurité, Interphonie de sécurité.",
+          ],
         },
         {
           im: imgs.pictoControleAcces,
           title: "Sécurisation des sites",
-          txt: ["Sureté, anti-intrusion, vidéosurveillance, contrôle d’accès."],
+          txt: [
+            "Nos experts sont à votre écoute pour une solution de sécurité adaptée à votre activité, en intégrant les solutions de contrôle d’accès, vidéo surveillance et systèmes anti-intrusion.",
+          ],
         },
         {
           im: imgs.pictoEclairage,
           title: "Transports et mobilité",
-          txt: ["Eclairage urbain dynamique, éclairage des tunnels, contrôle accès des tunnels, bornes IRVE"],
+          txt: [
+            "Nous vous accompagnons dans l’attractivité de votre territoire et du confort des citoyens, à travers l’amélioration de la performance de vos équipements urbains : éclairage urbain dynamique, éclairage des infrastructures routières, contrôles commandes des systèmes de sécurité et d’exploitation des infrastructures routières (tunnels, …)",
+          ],
         },
       ],
     },
@@ -92,7 +100,7 @@ const txts: any = {
         {
           name: "Pérennité",
           descr:
-            "Une structure à taille humaine, agile. Dont l’activité repose sur la récurrence pour 70% de son chiffre d’affaires. Notre structure financière est saine.",
+            "Une structure à taille humaine, agile, dont l’activité repose sur la récurrence pour 70% de son chiffre d’affaires. Notre structure financière est saine.",
         },
         {
           name: "Indépendance",
@@ -102,7 +110,7 @@ const txts: any = {
         {
           name: "Proximité",
           descr:
-            "Un acteur du numérique et de l’efficacité énergétique, nous sommes engagé dans un processus de développement durable, et conscient des enjeux environnementaux.",
+            "Un acteur du numérique et de l’efficacité énergétique, nous sommes engagés dans un processus de développement durable, et conscients des enjeux environnementaux.",
         },
       ],
     },
@@ -116,7 +124,7 @@ const txts: any = {
     },
     keys: {
       title: "Nos chiffres clés",
-      subTitle: "En détails...",
+      subTitle: "En détail...",
     },
     seaWergie: {
       title: "Sea Wergie",
@@ -226,7 +234,7 @@ const Mes: NextPage = () => {
                   symbol="+"
                 />
                 <span>collaborateurs à votre service</span>
-                <span>(Ingénieurs d’étude, chargés d’affaires, conducteurs de travaux, chef de chantiers)</span>
+                <span>(Ingénieurs d’étude, chargés d’affaires, conducteurs de travaux, chefs de chantiers)</span>
               </div>
               <div>
                 <Counter
@@ -258,7 +266,7 @@ const Mes: NextPage = () => {
               <div>Intégration des activités de I2S</div>
               <div>Intégration des activités de C2S</div>
               <div>Prise de participation SeaWergie</div>
-              <div>Ouverture du capital au manager et à la SAM Metis Famille Casiraghi</div>
+              <div>Ouverture du capital au manager et à la SAM Metis</div>
             </div>
           </div>
         </section>
